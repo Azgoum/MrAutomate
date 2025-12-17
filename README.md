@@ -215,14 +215,6 @@ Sizes: `.btn--xs`, `.btn--sm`, `.btn--md`, `.btn--lg`, `.btn--full`
 
 ## Shortcodes
 
-### Responsive Images
-
-```nunjucks
-{% image "src/assets/images/photo.jpg", "Alt text", "100vw" %}
-```
-
-Generates optimized AVIF, WebP, and JPEG with srcset.
-
 ### YouTube Embeds
 
 ```nunjucks
