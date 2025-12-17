@@ -88,7 +88,7 @@ collections_config:
     output: false
     icon: code
     name: Custom Scripts
-    description: Inject custom scripts into head, body, or footer
+    description: "Inject custom code: HEAD (before render), BODY (after open), FOOTER (before close)"
     _enabled_editors:
       - data
     disable_add: true
@@ -142,16 +142,18 @@ collection_groups:
   - heading: People
     collections:
       - authors
-  - heading: Website Settings
+  - heading: General
     collections:
       - metadata
       - tracking
-      - scripts
       - cookies
   - heading: Navigation
     collections:
       - navigation
       - footer_settings
+  - heading: Advanced
+    collections:
+      - scripts
 
 _structures:
   blocks:
