@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "setup:local": "npm install --no-save puppeteer @axe-core/puppeteer eslint prettier favicons serve-handler rimraf",
-    "clean": "rm -rf ./_site ./.cache",
+    "clean": "rimraf ./_site ./.cache",
     "watch:11ty": "eleventy --serve --quiet",
     "build:11ty": "eleventy",
     "watch:js": "esbuild ./src/assets/js/main.js --outfile=./_site/assets/js/main.js --bundle --watch --sourcemap",
