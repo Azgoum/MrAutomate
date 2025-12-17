@@ -52,7 +52,7 @@ body:
     attributes:
       label: Node.js Version
       description: Run `node --version` to get this.
-      placeholder: "22.0.0"
+      placeholder: "24.0.0"
     validations:
       required: true
 
