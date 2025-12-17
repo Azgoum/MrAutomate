@@ -2,6 +2,8 @@
 
 > **Work in Progress** - This starter is under active development. Feel free to use it as-is, but expect breaking changes until v1.0 release.
 
+**[Live Demo](https://snappy-lemon.cloudvent.net)**
+
 A modern, fast, and accessible starter theme for building static websites with [Eleventy](https://www.11ty.dev/), [TailwindCSS](https://tailwindcss.com/), and [CloudCannon CMS](https://cloudcannon.com/).
 
 ## Features
@@ -332,19 +334,27 @@ The configuration includes:
 
 ### Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
+[![Deploy to Netlify](https://img.shields.io/badge/Deploy%20to-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://app.netlify.com/start/deploy?repository=https://github.com/AbolDev/freshjuice-11ty-starter)
 
 Configuration is in `netlify.toml`.
 
 ### Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+[![Deploy to Vercel](https://img.shields.io/badge/Deploy%20to-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/new/clone?repository-url=https://github.com/AbolDev/freshjuice-11ty-starter)
 
 Configuration is in `vercel.json`.
 
 ### Cloudflare Pages
 
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new/provider/github)
+
 Configuration is in `wrangler.toml`.
+
+### CloudCannon
+
+[![Deploy to CloudCannon](https://img.shields.io/badge/Deploy%20to-CloudCannon-407AFC?style=for-the-badge&logo=cloudcannon&logoColor=white)](https://app.cloudcannon.com/register#sites/connect/github/AbolDev/freshjuice-11ty-starter)
+
+Configuration is in `cloudcannon.config.yaml`.
 
 All platforms use Node 24 and run `npm run build`.
 
