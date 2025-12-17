@@ -421,6 +421,10 @@ Demo images are royalty-free from [Pexels](https://www.pexels.com/):
 | Pineapples | Pineapple Supply Co. | [View](https://www.pexels.com/photo/two-pineapple-fruit-on-sad-near-body-of-water-27269/) |
 | Cherries | Wendy Aros-Routman | [View](https://www.pexels.com/photo/red-cherries-on-stainless-steel-bowl-1178610/) |
 
+## Contributing
+
+Contributions are welcome! Please open an issue first to discuss what you'd like to change.
+
 ## License
 
 MIT License - use this starter for any project.
