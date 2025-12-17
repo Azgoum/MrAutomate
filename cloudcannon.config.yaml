@@ -58,21 +58,20 @@ collections_config:
       default:
         path: .cloudcannon/schemas/author.yaml
 
-data_config:
-  meta:
-    path: _data/meta.yaml
+  data:
+    path: _data
+    output: false
+    icon: settings
     name: Site Settings
-    description: Global site metadata and settings
+    description: Global site settings and configuration
+    _enabled_editors:
+      - data
+    disable_add: true
+    disable_add_folder: true
 
-  navigation:
-    path: _data/navigation.yaml
-    name: Navigation
-    description: Site navigation menus
-
-  footer:
-    path: _data/footer.yaml
-    name: Footer
-    description: Footer content and links
+data_config:
+  authors:
+    path: authors
 
 collection_groups:
   - heading: Content
@@ -82,6 +81,9 @@ collection_groups:
   - heading: People
     collections:
       - authors
+  - heading: Settings
+    collections:
+      - data
 
 _structures:
   blocks:
