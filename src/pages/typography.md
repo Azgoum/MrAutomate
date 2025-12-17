@@ -169,8 +169,8 @@ Content below the rule.
 ## Images
 
 <figure>
-  <img src="https://picsum.photos/800/400" alt="Random placeholder image">
-  <figcaption>This is a figure caption describing the image above.</figcaption>
+  <img src="/assets/images/pexels-sonny-vermeer-505472791-17111917.jpg" alt="Basilica de Santa Maria la Real de Covadonga, Asturias, Spain">
+  <figcaption>Basilica de Santa Maria la Real de Covadonga. Photo by Sonny Vermeer.</figcaption>
 </figure>
 
 ## Details / Summary

@@ -101,6 +101,11 @@ Images often account for the majority of page weight. Optimize them by:
 - Implementing responsive images
 - Lazy loading below-the-fold content
 
+<figure>
+  <img src="/assets/images/pexels-sonny-vermeer-505472791-17111909.jpg" alt="The beautiful green mountains in Covadonga, Asturias, Spain" eleventy:widths="450" />
+  <figcaption>Optimized image with custom width. Photo by Sonny Vermeer.</figcaption>
+</figure>
+
 ### Core Web Vitals
 
 Google's Core Web Vitals measure real-world user experience:
