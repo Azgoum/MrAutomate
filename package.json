@@ -43,7 +43,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "optionalDependencies": {
     "@axe-core/puppeteer": "^4.11.0",

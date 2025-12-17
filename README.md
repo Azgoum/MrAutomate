@@ -22,7 +22,7 @@ A modern, fast, and accessible starter theme for building static websites with [
 
 ### Prerequisites
 
-- Node.js 22 or higher (see `.nvmrc`)
+- Node.js 24 or higher (see `.nvmrc`)
 - npm
 
 ### Installation
