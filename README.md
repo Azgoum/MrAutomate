@@ -7,7 +7,7 @@ A modern, fast, and accessible starter theme for building static websites with [
 ## Features
 
 - **Eleventy v3** - Fast static site generation with ES modules
-- **TailwindCSS v4** - Utility-first CSS with custom component classes
+- **TailwindCSS v4** - Utility-first CSS framework
 - **Alpine.js** - Lightweight JavaScript for interactivity
 - **Pagefind** - Static search with zero configuration
 - **Shiki** - Beautiful syntax highlighting for code blocks
@@ -144,7 +144,6 @@ freshjuice-11ty-starter/
 ├── .cloudcannon/
 │   └── schemas/               # CloudCannon schemas
 ├── eleventy.config.js
-├── postcss.config.js
 ├── netlify.toml               # Netlify configuration
 ├── vercel.json                # Vercel configuration
 ├── wrangler.toml              # Cloudflare Pages configuration
@@ -391,6 +390,8 @@ Demo images are royalty-free from [Pexels](https://www.pexels.com/):
 | Raspberries | Pixabay | [View](https://www.pexels.com/photo/red-raspberry-52536/) |
 | Pineapples | Pineapple Supply Co. | [View](https://www.pexels.com/photo/two-pineapple-fruit-on-sad-near-body-of-water-27269/) |
 | Cherries | Wendy Aros-Routman | [View](https://www.pexels.com/photo/red-cherries-on-stainless-steel-bowl-1178610/) |
+| Covadonga Basilica | Sonny Vermeer | [View](https://www.pexels.com/photo/basilica-de-santa-maria-la-real-de-covadonga-asturias-spain-17111917/) |
+| Covadonga Mountains | Sonny Vermeer | [View](https://www.pexels.com/photo/the-beautiful-green-mountains-in-covadonga-austerias-spain-17118596/) |
 
 ## Contributing
 
