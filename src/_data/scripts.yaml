@@ -1,11 +1,21 @@
+# ============================================
 # Custom Scripts Injection
-# Add custom scripts to different parts of the page
+# ============================================
 
-# Scripts added to <head> section
+# HEAD SCRIPTS
+# Loaded in <head> section, before page renders
+# Use for: critical CSS, preloads, early analytics
 head_scripts: |
 
-# Scripts added right after opening <body> tag
+
+# BODY SCRIPTS
+# Loaded right after opening <body> tag
+# Use for: tag manager noscript, early DOM scripts
 after_body_scripts: |
 
-# Scripts added before closing </body> tag
+
+# FOOTER SCRIPTS
+# Loaded before closing </body> tag
+# Use for: third-party widgets, chat, non-critical scripts
 footer_scripts: |
+
