@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% include "partials/seo.njk" %}
-  <link rel="stylesheet" href="/assets/css/main.css?v={{ build.hash.short }}">
+  <link rel="stylesheet" href="/assets/css/main.css?v={{ build.timestamp.raw }}">
 </head>
 <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900 antialiased">
   {% include "partials/header.njk" %}
@@ -15,9 +15,9 @@
 
   {% include "partials/footer.njk" %}
 
-  <script defer src="/assets/js/main.js?v={{ build.hash.short }}"></script>
+  <script defer src="/assets/js/main.js?v={{ build.timestamp.raw }}"></script>
   {% if pagefind %}
-  <script src="/pagefind/pagefind-ui.js?v={{ build.hash.short }}" onload="new PagefindUI({ element: '#pagefind', showSubResults: true, showImages: false });"></script>
+  <script src="/pagefind/pagefind-ui.js?v={{ build.timestamp.raw }}" onload="new PagefindUI({ element: '#pagefind', showSubResults: true, showImages: false });"></script>
   {% endif %}
 </body>
 </html>
