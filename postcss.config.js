@@ -17,7 +17,6 @@ export default {
                 discardComments: {
                   removeAll: true,
                 },
-                minifySelectors: false,
               },
             ],
           }),
