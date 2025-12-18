@@ -1,0 +1,7 @@
+_name: Redirects
+_description: URL redirects (not supported on Vercel)
+_icon: route
+
+rules: |
+  /old-url /new-url 301
+

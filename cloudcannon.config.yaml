@@ -112,6 +112,8 @@ collections_config:
     glob:
       - tracking.yaml
       - consent.yaml
+      - robots.yaml
+      - redirects.yaml
       - scripts_head.yaml
       - scripts_body.yaml
       - scripts_footer.yaml
@@ -528,6 +530,12 @@ _inputs:
     label: Code
     options:
       syntax: html
+
+  # Robots inputs
+  rules:
+    type: textarea
+    label: Rules
+    comment: "Crawler rules (e.g., User-agent, Allow, Disallow)"
 
   # Header inputs
   menu:
