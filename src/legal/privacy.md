@@ -1,5 +1,4 @@
 ---
-layout: layouts/legal.njk
 title: "Privacy Policy"
 description: "Our privacy policy explains how we collect, use, and protect your personal information."
 permalink: /privacy/

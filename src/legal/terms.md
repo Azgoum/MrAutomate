@@ -1,5 +1,4 @@
 ---
-layout: layouts/legal.njk
 title: "Terms of Service"
 description: "Please read these terms of service carefully before using our website."
 permalink: /terms/

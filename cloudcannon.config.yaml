@@ -41,6 +41,9 @@ collections_config:
     _enabled_editors:
       - content
       - data
+    _inputs:
+      layout:
+        hidden: true
     add_options:
       - name: Add New Legal Page
         schema: default
@@ -59,6 +62,9 @@ collections_config:
     _enabled_editors:
       - content
       - data
+    _inputs:
+      layout:
+        hidden: true
     add_options:
       - name: Add New Post
         schema: default
@@ -76,6 +82,9 @@ collections_config:
       - "!**/*.json"
     _enabled_editors:
       - data
+    _inputs:
+      layout:
+        hidden: true
     add_options:
       - name: Add New Author
         schema: default
@@ -369,12 +378,14 @@ _inputs:
     label: Layout
     options:
       values:
-        - layouts/base.njk
-        - layouts/post.njk
-        - layouts/legal.njk
-        - layouts/author.njk
-        - layouts/landing.njk
-        - layouts/error.njk
+        - label: Standard Page
+          value: layouts/base.njk
+        - label: Blog Post
+          value: layouts/post.njk
+        - label: Legal Page
+          value: layouts/legal.njk
+        - label: Landing Page
+          value: layouts/landing.njk
 
   title:
     type: text
@@ -545,10 +556,10 @@ _inputs:
       syntax: html
 
   # Robots inputs
-  content:
+  crawler_rules:
     type: textarea
-    label: Content
-    comment: "Crawler rules (e.g., User-agent, Allow, Disallow)"
+    label: Crawler Rules
+    comment: "e.g., User-agent, Allow, Disallow"
 
   # Redirects inputs
   rules:
