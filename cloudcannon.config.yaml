@@ -130,7 +130,7 @@ _structures:
           label:
           url:
         preview:
-          text: label
+          text: Link
           icon: link
         _inputs:
           label:
@@ -148,7 +148,7 @@ _structures:
           icon:
           class:
         preview:
-          text: label
+          text: Link
           icon: link
         _inputs:
           label:
