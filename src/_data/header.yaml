@@ -23,6 +23,7 @@ show_search: true
 
 # Call to Action Button
 cta:
+  _icon: ads_click
   label: "Get Started"
   url: "/contact/"
   icon: "rocket-launch"
