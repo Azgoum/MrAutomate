@@ -53,15 +53,20 @@
     <div class="mt-12 pt-8 border-t border-stone-800 text-stone-400 text-sm">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="md:flex-1">&copy; {% year %} {{ footer.copyright }}</p>
+        {% if footer.show_credits %}
         <p class="md:flex-1 md:text-center">Designed by <a href="https://alex.zappa.dev/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-white transition-colors underline">Alex Zappa</a> at <a href="https://freshjuice.dev/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-white transition-colors underline">FreshJuice</a></p>
+        {% endif %}
+        {% if footer.bottom_links %}
         <p class="md:flex-1 md:text-right flex items-center justify-center md:justify-end gap-3">
-          <a href="https://github.com/freshjuice-dev/freshjuice-11ty-starter" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-stone-300 hover:text-white transition-colors">
-            {% phosphor "github-logo", "bold", { size: 16 } %}
-            <span>GitHub</span>
+          {% for link in footer.bottom_links %}
+          {% if not loop.first %}<span class="hidden md:inline">&middot;</span>{% endif %}
+          <a href="{{ link.url }}" {% if link.url.startsWith('http') %}target="_blank" rel="noopener noreferrer"{% endif %} class="{% if link.icon %}inline-flex items-center gap-1 {% endif %}text-stone-300 hover:text-white transition-colors">
+            {% if link.icon %}{% phosphor link.icon, "bold", { size: 16 } %}{% endif %}
+            <span>{{ link.label }}</span>
           </a>
-          <span class="hidden md:inline">&middot;</span>
-          <a href="/sitemap.xml" class="text-stone-300 hover:text-white transition-colors">Sitemap</a>
+          {% endfor %}
         </p>
+        {% endif %}
       </div>
     </div>
   </div>

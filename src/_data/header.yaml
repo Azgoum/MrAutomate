@@ -1,4 +1,5 @@
-main:
+# Header Navigation
+menu:
   - label: "Home"
     url: "/"
   - label: "Pricing"
@@ -9,3 +10,9 @@ main:
     url: "/blog/"
   - label: "Contact"
     url: "/contact/"
+
+# Call to Action Button
+cta:
+  label: "Get Started"
+  url: "/contact/"
+  icon: "rocket-launch"

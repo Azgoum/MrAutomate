@@ -8,7 +8,7 @@
 
       {# Desktop Navigation - Centered #}
       <ul class="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
-        {% for item in navigation.main %}
+        {% for item in header.menu %}
         <li>
           <a href="{{ item.url }}" class="text-stone-600 hover:text-primary-700 font-medium transition-colors{% if page.url === item.url %} text-primary-700{% endif %}">
             {{ item.label }}
@@ -22,10 +22,12 @@
         <a href="/search/" class="hidden lg:flex p-2 text-stone-600 hover:text-primary-700 transition-colors" aria-label="Search">
           {% phosphor "magnifying-glass", "bold", { size: 20 } %}
         </a>
-        <a href="/contact/" class="hidden lg:inline-flex btn btn--primary btn--sm">
-          {% phosphor "rocket-launch", "duotone", { size: 16 } %}
-          <span>Get Started</span>
+        {% if header.cta.url %}
+        <a href="{{ header.cta.url }}" class="hidden lg:inline-flex btn btn--primary btn--sm">
+          {% if header.cta.icon %}{% phosphor header.cta.icon, "duotone", { size: 16 } %}{% endif %}
+          <span>{{ header.cta.label }}</span>
         </a>
+        {% endif %}
 
         {# Mobile Menu Button #}
         <button
@@ -51,7 +53,7 @@
       class="lg:hidden overflow-hidden"
     >
       <ul class="flex flex-col gap-1 py-4">
-        {% for item in navigation.main %}
+        {% for item in header.menu %}
         <li>
           <a
             href="{{ item.url }}"
@@ -70,12 +72,14 @@
             <span>Search</span>
           </a>
         </li>
+        {% if header.cta.url %}
         <li class="pt-4 mt-4 border-t border-stone-200">
-          <a href="/contact/" class="btn btn--primary btn--full">
-            {% phosphor "rocket-launch", "duotone", { size: 20 } %}
-            <span>Get Started</span>
+          <a href="{{ header.cta.url }}" class="btn btn--primary btn--full">
+            {% if header.cta.icon %}{% phosphor header.cta.icon, "duotone", { size: 20 } %}{% endif %}
+            <span>{{ header.cta.label }}</span>
           </a>
         </li>
+        {% endif %}
       </ul>
     </div>
   </div>

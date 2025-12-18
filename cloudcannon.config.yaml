@@ -64,10 +64,12 @@ collections_config:
       - metadata.yaml
       - tracking.yaml
       - consent.yaml
+      - header.yaml
+      - footer.yaml
     output: false
     icon: settings
     name: General
-    description: General site settings
+    description: Site settings, header and footer
     _enabled_editors:
       - data
     disable_add: true
@@ -88,30 +90,6 @@ collections_config:
     disable_add: true
     disable_add_folder: true
 
-  navigation:
-    path: _data
-    glob: navigation.yaml
-    output: false
-    icon: menu
-    name: Main Navigation
-    description: Site navigation menus
-    _enabled_editors:
-      - data
-    disable_add: true
-    disable_add_folder: true
-
-  footer_settings:
-    path: _data
-    glob: footer.yaml
-    output: false
-    icon: view_agenda
-    name: Footer
-    description: Footer content and links
-    _enabled_editors:
-      - data
-    disable_add: true
-    disable_add_folder: true
-
 data_config:
   authors:
     path: authors
@@ -124,10 +102,6 @@ collection_groups:
   - heading: People
     collections:
       - authors
-  - heading: Navigation
-    collections:
-      - navigation
-      - footer_settings
   - heading: Website Settings
     collections:
       - general
