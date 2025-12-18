@@ -437,17 +437,17 @@ _inputs:
       syntax: html
 
   # Header inputs
-  show_search:
-    type: switch
-    label: Show Search
-    comment: Display search button in header
-
   menu:
     type: array
     label: Menu
     comment: Main navigation links displayed in the header
     options:
       structures: _structures.menu_links
+
+  show_search:
+    type: switch
+    label: Show Search
+    comment: Display search icon in header and mobile menu
 
   cta:
     type: object

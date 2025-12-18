@@ -5,9 +5,6 @@ _icon: web
 # Logo
 logo: "/assets/images/logo.svg"
 
-# Show Search Button
-show_search: true
-
 # Header Navigation
 menu:
   - label: "Home"
@@ -20,6 +17,9 @@ menu:
     url: "/blog/"
   - label: "Contact"
     url: "/contact/"
+
+# Show Search Button
+show_search: true
 
 # Call to Action Button
 cta:
