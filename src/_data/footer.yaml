@@ -1,5 +1,7 @@
-# Footer Columns
-columns:
+_icon: call_to_action
+
+# Footer Sections
+sections:
   - title: "Company"
     links:
       - label: "About"
@@ -33,8 +35,8 @@ columns:
       - label: "500 Page"
         url: "/500.html"
 
-# Bottom Bar Links
-bottom_links:
+# Quick Links (bottom bar)
+quick_links:
   - label: "GitHub"
     url: "https://github.com/freshjuice-dev/freshjuice-11ty-starter"
     icon: "github-logo"
@@ -44,5 +46,5 @@ bottom_links:
 # Copyright
 copyright: "FreshJuice. All rights reserved."
 
-# Show credits (Designed by Alex Zappa at FreshJuice)
+# Spread the juice! Show some love for FreshJuice 🍊
 show_credits: true

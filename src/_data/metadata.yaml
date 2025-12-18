@@ -1,3 +1,5 @@
+_icon: public
+
 # Site Metadata
 site_name: "FreshJuice Starter"
 site_description: "A modern 11ty starter theme with CloudCannon CMS integration, TailwindCSS, and Alpine.js"

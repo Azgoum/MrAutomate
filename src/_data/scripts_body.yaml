@@ -1,3 +1,5 @@
+_icon: data_object
+
 # Body Scripts - loaded after opening <body> tag
 code: |
   <!-- 🍋 Zesty scripts go here! Right after the body opens -->

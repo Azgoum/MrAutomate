@@ -70,6 +70,10 @@ collections_config:
     icon: settings
     name: General
     description: Site settings, header and footer
+    preview:
+      icon:
+        - key: _icon
+        - settings
     _enabled_editors:
       - data
     disable_add: true
@@ -82,9 +86,13 @@ collections_config:
       - scripts_body.yaml
       - scripts_footer.yaml
     output: false
-    icon: code
+    icon: settings_ethernet
     name: Advanced
-    description: Custom scripts for HEAD, BODY, and FOOTER
+    description: Advanced settings for power users
+    preview:
+      icon:
+        - key: _icon
+        - code
     _enabled_editors:
       - data
     disable_add: true
@@ -361,6 +369,38 @@ _inputs:
     label: Code
     options:
       syntax: html
+
+  # Header inputs
+  menu:
+    type: array
+    label: Menu
+    comment: Main navigation links displayed in the header
+
+  cta:
+    type: object
+    label: Call to Action
+    comment: Primary action button in the header
+
+  # Footer inputs
+  sections:
+    type: array
+    label: Footer Sections
+    comment: Link columns displayed in the footer (Company, Resources, Legal, etc.)
+
+  quick_links:
+    type: array
+    label: Quick Links
+    comment: Utility links in the footer bottom bar (GitHub, Sitemap, etc.)
+
+  copyright:
+    type: text
+    label: Copyright
+    comment: Copyright text displayed in the footer
+
+  show_credits:
+    type: switch
+    label: Show Credits
+    comment: "Spread the juice! Show some love for FreshJuice 🍊"
 
 _editables:
   content:

@@ -1,3 +1,5 @@
+_icon: integration_instructions
+
 # Footer Scripts - loaded before closing </body> tag
 code: |
   <!-- 🍇 The freshest scripts saved for last! -->

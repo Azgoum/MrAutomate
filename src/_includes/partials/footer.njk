@@ -32,12 +32,12 @@
       </div>
 
       <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-      {# Footer Link Columns #}
-      {% for column in footer.columns %}
+      {# Footer Sections #}
+      {% for section in footer.sections %}
       <div>
-        <h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">{{ column.title }}</h3>
+        <h3 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">{{ section.title }}</h3>
         <ul class="space-y-3">
-          {% for link in column.links %}
+          {% for link in section.links %}
           <li>
             <a href="{{ link.url }}" class="text-stone-400 hover:text-white transition-colors text-sm">
               {{ link.label }}
@@ -56,9 +56,9 @@
         {% if footer.show_credits %}
         <p class="md:flex-1 md:text-center">Designed by <a href="https://alex.zappa.dev/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-white transition-colors underline">Alex Zappa</a> at <a href="https://freshjuice.dev/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-white transition-colors underline">FreshJuice</a></p>
         {% endif %}
-        {% if footer.bottom_links %}
+        {% if footer.quick_links %}
         <p class="md:flex-1 md:text-right flex items-center justify-center md:justify-end gap-3">
-          {% for link in footer.bottom_links %}
+          {% for link in footer.quick_links %}
           {% if not loop.first %}<span class="hidden md:inline">&middot;</span>{% endif %}
           <a href="{{ link.url }}" {% if link.url.startsWith('http') %}target="_blank" rel="noopener noreferrer"{% endif %} class="{% if link.icon %}inline-flex items-center gap-1 {% endif %}text-stone-300 hover:text-white transition-colors">
             {% if link.icon %}{% phosphor link.icon, "bold", { size: 16 } %}{% endif %}

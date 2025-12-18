@@ -1,3 +1,5 @@
+_icon: code_blocks
+
 # Head Scripts - loaded in <head> before page renders
 code: |
   <!-- 🍊 Fresh squeeze here! Add your head scripts below -->
