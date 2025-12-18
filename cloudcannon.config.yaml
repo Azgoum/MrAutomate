@@ -49,7 +49,7 @@ collections_config:
         schema: default
     schemas:
       default:
-        path: .cloudcannon/schemas/legal.yaml
+        path: .cloudcannon/schemas/legal.md
 
   blog:
     path: blog
@@ -70,7 +70,7 @@ collections_config:
         schema: default
     schemas:
       default:
-        path: .cloudcannon/schemas/post.yaml
+        path: .cloudcannon/schemas/post.md
 
   authors:
     path: authors
@@ -90,7 +90,7 @@ collections_config:
         schema: default
     schemas:
       default:
-        path: .cloudcannon/schemas/author.yaml
+        path: .cloudcannon/schemas/author.md
 
   general:
     path: _data

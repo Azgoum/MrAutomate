@@ -1,0 +1,14 @@
+---
+_schema: author
+_enabled_editors:
+  - data
+
+name:
+slug:
+bio:
+avatar:
+social:
+  twitter:
+  linkedin:
+  github:
+---

@@ -1,12 +1,16 @@
-_schema: default
+---
+_schema: post
 _enabled_editors:
   - content
   - data
 
 title:
 description:
-layout: layouts/legal.njk
-permalink:
-last_updated:
+date:
+author:
+image:
+image_alt:
+tags: []
 noindex: false
 llms_exclude: false
+---
