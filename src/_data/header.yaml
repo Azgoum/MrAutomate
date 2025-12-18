@@ -2,6 +2,12 @@ _name: Header
 _description: Main navigation menu and CTA button
 _icon: web
 
+# Logo
+logo: "/assets/images/logo.svg"
+
+# Show Search Button
+show_search: true
+
 # Header Navigation
 menu:
   - label: "Home"

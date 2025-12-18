@@ -124,6 +124,22 @@ collection_groups:
       - advanced
 
 _structures:
+  menu_links:
+    values:
+      - value:
+          label:
+          url:
+        preview:
+          text: Link
+          icon: link
+        _inputs:
+          label:
+            type: text
+            label: Label
+          url:
+            type: url
+            label: URL
+
   section_links:
     values:
       - value:
@@ -421,21 +437,29 @@ _inputs:
       syntax: html
 
   # Header inputs
+  show_search:
+    type: switch
+    label: Show Search
+    comment: Display search button in header
+
   menu:
     type: array
     label: Menu
     comment: Main navigation links displayed in the header
+    options:
+      structures: _structures.menu_links
 
   cta:
     type: object
     label: Call to Action
     comment: Primary action button in the header
 
-  # Footer inputs
+  # Shared inputs
   logo:
     type: image
     label: Logo
-    comment: Footer logo image
+
+  # Footer inputs
 
   name:
     type: text

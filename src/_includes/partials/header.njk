@@ -3,7 +3,7 @@
     <nav class="flex items-center justify-between h-16 lg:h-20">
       {# Logo #}
       <a href="/" class="block">
-        <img src="/assets/images/logo.svg" alt="{{ metadata.site_name }}" class="h-8 w-auto">
+        <img src="{{ header.logo }}" alt="{{ metadata.site_name }}" class="h-8 w-auto">
       </a>
 
       {# Desktop Navigation - Centered #}
@@ -19,9 +19,11 @@
 
       {# Desktop CTA + Search + Mobile Menu Button #}
       <div class="flex items-center gap-2 lg:gap-4">
+        {% if header.show_search %}
         <a href="/search/" class="hidden lg:flex p-2 text-stone-600 hover:text-primary-700 transition-colors" aria-label="Search">
           {% phosphor "magnifying-glass", "bold", { size: 20 } %}
         </a>
+        {% endif %}
         {% if header.cta.url %}
         <a href="{{ header.cta.url }}" class="hidden lg:inline-flex btn btn--primary btn--sm">
           {% if header.cta.icon %}{% phosphor header.cta.icon, "duotone", { size: 16 } %}{% endif %}
@@ -63,6 +65,7 @@
           </a>
         </li>
         {% endfor %}
+        {% if header.show_search %}
         <li>
           <a
             href="/search/"
@@ -72,6 +75,7 @@
             <span>Search</span>
           </a>
         </li>
+        {% endif %}
         {% if header.cta.url %}
         <li class="pt-4 mt-4 border-t border-stone-200">
           <a href="{{ header.cta.url }}" class="btn btn--primary btn--full">
