@@ -399,6 +399,16 @@ _inputs:
     label: GitHub URL
 
   # General settings inputs - Tracking
+  google_site_verification:
+    type: text
+    label: Google Search Console
+    comment: "Site verification code"
+
+  bing_site_verification:
+    type: text
+    label: Bing Webmaster Tools
+    comment: "Site verification code"
+
   google_analytics_id:
     type: text
     label: Google Analytics 4

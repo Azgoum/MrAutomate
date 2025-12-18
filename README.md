@@ -101,7 +101,7 @@ freshjuice-11ty-starter/
 │   │   ├── partials/          # Reusable partials
 │   │   │   ├── header.njk
 │   │   │   ├── footer.njk
-│   │   │   ├── seo.njk
+│   │   │   ├── metatags.njk
 │   │   │   └── favicon-meta.njk
 │   │   ├── _components/       # Nunjucks component macros
 │   │   │   └── index.njk
