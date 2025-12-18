@@ -532,10 +532,16 @@ _inputs:
       syntax: html
 
   # Robots inputs
+  content:
+    type: textarea
+    label: Content
+    comment: "Crawler rules (e.g., User-agent, Allow, Disallow)"
+
+  # Redirects inputs
   rules:
     type: textarea
     label: Rules
-    comment: "Crawler rules (e.g., User-agent, Allow, Disallow)"
+    comment: "Format: /from /to status-code"
 
   # Header inputs
   menu:
