@@ -377,6 +377,10 @@ _inputs:
     type: select
     label: Layout
     options:
+      preview:
+        text:
+          - key: label
+      value_key: value
       values:
         - label: Standard Page
           value: layouts/base.njk
