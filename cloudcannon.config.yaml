@@ -74,17 +74,17 @@ collections_config:
     disable_add_folder: true
 
   advanced:
-    path: _includes/partials
+    path: _data
     glob:
-      - scripts_head.html
-      - scripts_body.html
-      - scripts_footer.html
+      - scripts_head.yaml
+      - scripts_body.yaml
+      - scripts_footer.yaml
     output: false
     icon: code
     name: Advanced
     description: Custom scripts for HEAD, BODY, and FOOTER
     _enabled_editors:
-      - source
+      - data
     disable_add: true
     disable_add_folder: true
 
@@ -381,6 +381,12 @@ _inputs:
       values:
         - auto
         - manual
+
+  code:
+    type: code
+    label: Code
+    options:
+      syntax: html
 
 _editables:
   content:
