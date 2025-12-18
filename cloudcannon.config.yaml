@@ -453,6 +453,26 @@ _inputs:
     type: object
     label: Call to Action
     comment: Primary action button in the header
+    options:
+      preview:
+        icon: ads_click
+      structures:
+        values:
+          - value:
+              label:
+              url:
+              icon:
+            _inputs:
+              label:
+                type: text
+                label: Button Text
+              url:
+                type: url
+                label: URL
+              icon:
+                type: text
+                label: Icon
+                comment: "[Phosphor](https://phosphoricons.com/) icon name (e.g., rocket-launch, arrow-right)"
 
   # Shared inputs
   logo:
