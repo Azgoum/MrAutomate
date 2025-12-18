@@ -11,15 +11,11 @@
   <link rel="stylesheet" href="/assets/css/main.css?v={{ build.timestamp.raw }}">
 
   {# Custom Head Scripts #}
-  {% if scripts.head_scripts %}
-  {{ scripts.head_scripts | safe }}
-  {% endif %}
+  {% include "partials/scripts_head.html" ignore missing %}
 </head>
 <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900 antialiased">
-  {# Custom After Body Scripts #}
-  {% if scripts.after_body_scripts %}
-  {{ scripts.after_body_scripts | safe }}
-  {% endif %}
+  {# Custom Body Scripts #}
+  {% include "partials/scripts_body.html" ignore missing %}
 
   {% include "partials/header.njk" %}
 
@@ -35,8 +31,6 @@
   {% endif %}
 
   {# Custom Footer Scripts #}
-  {% if scripts.footer_scripts %}
-  {{ scripts.footer_scripts | safe }}
-  {% endif %}
+  {% include "partials/scripts_footer.html" ignore missing %}
 </body>
 </html>

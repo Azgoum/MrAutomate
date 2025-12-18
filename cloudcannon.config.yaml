@@ -61,7 +61,6 @@ collections_config:
   general:
     path: _data
     glob:
-      - general.yaml
       - metadata.yaml
       - tracking.yaml
       - consent.yaml
@@ -75,14 +74,17 @@ collections_config:
     disable_add_folder: true
 
   advanced:
-    path: _data
-    glob: scripts.yaml
+    path: _includes/partials
+    glob:
+      - scripts_head.html
+      - scripts_body.html
+      - scripts_footer.html
     output: false
     icon: code
     name: Advanced
     description: Custom scripts for HEAD, BODY, and FOOTER
     _enabled_editors:
-      - data
+      - source
     disable_add: true
     disable_add_folder: true
 
@@ -379,27 +381,6 @@ _inputs:
       values:
         - auto
         - manual
-
-  head_scripts:
-    type: code
-    label: HEAD Scripts
-    comment: Loaded in <head> before page renders. Use for critical CSS, preloads, early analytics.
-    options:
-      syntax: html
-
-  after_body_scripts:
-    type: code
-    label: BODY Scripts
-    comment: Loaded right after opening <body> tag. Use for tag manager noscript, early DOM scripts.
-    options:
-      syntax: html
-
-  footer_scripts:
-    type: code
-    label: FOOTER Scripts
-    comment: Loaded before closing </body> tag. Use for third-party widgets, chat, non-critical scripts.
-    options:
-      syntax: html
 
 _editables:
   content:
