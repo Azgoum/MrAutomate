@@ -1,0 +1,21 @@
+_name: A/B Testing
+_description: Mida.so A/B testing configuration
+_icon: science
+
+# Mida.so Project Key
+# Get your key from: https://mida.so/dashboard
+project_key: ""
+
+# Server Location (for GDPR compliance)
+# Options: us, eu
+server_location: "us"
+
+# Anti-Flickering Script
+# Prevents content flash during experiment loading
+antiflicker_enabled: false
+antiflicker_timeout: 3000
+
+# Strict Consent Mode
+# When enabled, adds cookie=1 parameter and requires explicit consent
+# Use mida.grantConsent(true) to accept or mida.grantConsent(false) to decline
+strict_consent_mode: false

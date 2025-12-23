@@ -1,0 +1,11 @@
+{# Mida.so A/B Testing #}
+{% if mida.project_key %}
+{# Anti-flickering script (optional) #}
+{% if mida.antiflicker_enabled %}
+<script>
+var timeout={{ mida.antiflicker_timeout | default(3000) }};!function(h,i,d,e){var t,n=h.createElement("style");n.id=e,n.innerHTML="body{opacity:0}",h.head.appendChild(n),t=d,i.rmfk=function(){var t=h.getElementById(e);t&&t.parentNode.removeChild(t)},setTimeout(i.rmfk,t)}(document,window,timeout,"abhide");
+</script>
+{% endif %}
+{# Mida A/B Testing Script #}
+<script type="text/javascript" async src="https://cdn{% if mida.server_location == 'eu' %}-eu{% elif mida.server_location == 'us' %}-us{% endif %}.mida.so/js/optimize.js?key={{ mida.project_key }}{% if mida.strict_consent_mode %}&cookie=1{% endif %}"></script>
+{% endif %}

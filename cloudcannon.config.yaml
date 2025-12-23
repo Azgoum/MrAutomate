@@ -121,6 +121,7 @@ collections_config:
     glob:
       - tracking.yaml
       - consent.yaml
+      - mida.yaml
       - robots.yaml
       - redirects.yaml
       - scripts_head.yaml
@@ -552,6 +553,36 @@ _inputs:
       values:
         - auto
         - manual
+
+  # General settings inputs - Mida A/B Testing
+  project_key:
+    type: text
+    label: Project Key
+    comment: "Get your key from mida.so/dashboard"
+
+  server_location:
+    type: select
+    label: Server Location
+    comment: "Use EU for GDPR compliance"
+    options:
+      values:
+        - us
+        - eu
+
+  antiflicker_enabled:
+    type: switch
+    label: Enable Anti-Flicker
+    comment: Prevents content flash during experiment loading
+
+  antiflicker_timeout:
+    type: number
+    label: Anti-Flicker Timeout
+    comment: "Timeout in milliseconds (default: 3000)"
+
+  strict_consent_mode:
+    type: switch
+    label: Strict Consent Mode
+    comment: "Requires explicit consent via mida.grantConsent()"
 
   code:
     type: code
