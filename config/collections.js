@@ -35,6 +35,13 @@ export default function(eleventyConfig) {
       });
   });
 
+  // Customer stories collection
+  eleventyConfig.addCollection('stories', (collectionApi) => {
+    return collectionApi
+      .getFilteredByGlob('src/stories/*.md')
+      .sort((a, b) => b.date - a.date);
+  });
+
   // All content for sitemap
   eleventyConfig.addCollection('sitemap', (collectionApi) => {
     return collectionApi.getAll().filter((item) => {

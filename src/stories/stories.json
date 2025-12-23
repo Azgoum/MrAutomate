@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/story.njk",
+  "tags": ["stories"],
+  "eleventyComputed": {
+    "permalink": "{% if permalink %}/stories/{{ permalink | slugify }}/{% else %}/stories/{{ page.fileSlug }}/{% endif %}"
+  }
+}

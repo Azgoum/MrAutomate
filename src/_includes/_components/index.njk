@@ -91,7 +91,7 @@
    @param {string} className - Additional CSS classes
    -------------------------------------------------------------------------- #}
 {% macro card(props) %}
-<article class="group relative flex flex-col bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 {{ props.className }}">
+<article class="group relative flex flex-col bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg hover:border-primary-300 transition-all duration-300 {{ props.className }}">
   {% if props.image %}
   <div class="aspect-video overflow-hidden">
     <img src="{{ props.image }}" alt="{{ props.image_alt or props.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">

@@ -115,6 +115,35 @@ collections_config:
       default:
         path: .cloudcannon/schemas/docs.md
 
+  stories:
+    path: stories
+    output: true
+    icon: auto_stories
+    name: Customer Stories
+    singular_name: Story
+    description: Customer success stories and case studies
+    glob:
+      - "!**/*.json"
+    _enabled_editors:
+      - content
+      - data
+    _inputs:
+      layout:
+        hidden: true
+      permalink:
+        type: text
+        label: Permalink
+        comment: "Custom slug (e.g., acme-corp). Auto-formatted to /stories/acme-corp/"
+        options:
+          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          pattern_message: "Use lowercase letters, numbers, and hyphens only (e.g., acme-corp)"
+    add_options:
+      - name: Add New Story
+        schema: default
+    schemas:
+      default:
+        path: .cloudcannon/schemas/story.md
+
   authors:
     path: authors
     output: true
@@ -195,6 +224,7 @@ collection_groups:
   - heading: Content
     collections:
       - blog
+      - stories
       - docs
       - pages
       - legal
@@ -325,6 +355,27 @@ _structures:
             type: text
             label: Icon
             comment: "[Phosphor](https://phosphoricons.com/) icon name (e.g., rocket-launch, arrow-right)"
+
+  metrics:
+    values:
+      - value:
+          value:
+          label:
+        preview:
+          text:
+            - key: value
+          subtext:
+            - key: label
+          icon: analytics
+        _inputs:
+          value:
+            type: text
+            label: Value
+            comment: "The metric value (e.g., 50%, $1M, 3x)"
+          label:
+            type: text
+            label: Label
+            comment: "Description of the metric (e.g., Revenue Growth)"
 
   blocks:
     style: modal
@@ -520,6 +571,46 @@ _inputs:
     type: array
     label: Related Documents
     comment: "Links to related documentation"
+
+  # Customer stories inputs
+  company:
+    type: text
+    label: Company Name
+
+  logo:
+    type: image
+    label: Company Logo
+
+  industry:
+    type: text
+    label: Industry
+    comment: "e.g., SaaS, E-commerce, Healthcare"
+
+  metrics:
+    type: array
+    label: Key Metrics
+    comment: "Highlight key results (up to 4 recommended)"
+    options:
+      structures: _structures.metrics
+
+  quote:
+    type: textarea
+    label: Quote
+    comment: "Customer testimonial quote"
+
+  quote_author:
+    type: text
+    label: Quote Author
+    comment: "Name of the person quoted"
+
+  quote_author_title:
+    type: text
+    label: Quote Author Title
+    comment: "e.g., CEO, Marketing Director"
+
+  quote_author_image:
+    type: image
+    label: Quote Author Image
 
   # General settings inputs - Metadata
   site_name:

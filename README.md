@@ -405,6 +405,10 @@ Demo images are royalty-free from [Pexels](https://www.pexels.com/):
 | Cherries | Wendy Aros-Routman | [View](https://www.pexels.com/photo/red-cherries-on-stainless-steel-bowl-1178610/) |
 | Covadonga Basilica | Sonny Vermeer | [View](https://www.pexels.com/photo/basilica-de-santa-maria-la-real-de-covadonga-asturias-spain-17111917/) |
 | Covadonga Mountains | Sonny Vermeer | [View](https://www.pexels.com/photo/the-beautiful-green-mountains-in-covadonga-austerias-spain-17118596/) |
+| Placeholder | Steve Johnson | [View](https://www.pexels.com/photo/low-angle-view-of-lighting-equipment-on-shelf-257904/) |
+| Placeholder Avatar | cottonbro studio | [View](https://www.pexels.com/photo/halloween-decorated-room-5435182/) |
+
+Placeholder logos from [Logoipsum](https://logoipsum.com/).
 
 ## Contributing
 

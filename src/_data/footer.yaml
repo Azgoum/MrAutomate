@@ -16,6 +16,8 @@ sections:
     links:
       - label: "Documentation"
         url: "/docs/"
+      - label: "Customer Stories"
+        url: "/stories/"
       - label: "Getting Started"
         url: "/docs/getting-started/"
       - label: "GitHub"
