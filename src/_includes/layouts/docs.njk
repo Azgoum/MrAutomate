@@ -1,0 +1,98 @@
+---
+layout: layouts/base.njk
+---
+{% from "_components/index.njk" import badge %}
+
+<article class="py-12 lg:py-20">
+  <div class="container mx-auto px-4 max-w-4xl">
+    {# Back Navigation #}
+    <nav class="mb-8">
+      <a href="/docs/" class="group inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-primary-600 transition-colors">
+        <span class="transition-transform group-hover:-translate-x-1">{% phosphor "arrow-left", "bold", { size: 14 } %}</span>
+        <span>Back to Documentation</span>
+      </a>
+    </nav>
+
+    <header class="mb-8 lg:mb-12">
+      {% if category %}
+      <div class="flex flex-wrap gap-2 mb-4">
+        {{ badge({ text: category, variant: "secondary" }) }}
+      </div>
+      {% endif %}
+
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{{ title }}</h1>
+
+      {% if description %}
+      <p class="text-xl text-gray-600 mb-6">{{ description }}</p>
+      {% endif %}
+
+      {% if last_updated %}
+      <div class="text-sm text-gray-500">
+        Last updated: <time datetime="{{ last_updated | dateToISOString }}">{{ last_updated | readableDate }}</time>
+      </div>
+      {% endif %}
+    </header>
+
+    <div class="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline">
+      {{ content | safe }}
+    </div>
+
+    {# Prev/Next Navigation #}
+    {% set defined_prev = false %}
+    {% set defined_next = false %}
+    {% set currentIndex = -1 %}
+
+    {% for doc in collections.docs %}
+      {% if doc.url == page.url %}
+        {% set currentIndex = loop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if currentIndex >= 0 %}
+      {% if currentIndex > 0 %}
+        {% set defined_prev = collections.docs[currentIndex - 1] %}
+      {% endif %}
+      {% if currentIndex < (collections.docs | length) - 1 %}
+        {% set defined_next = collections.docs[currentIndex + 1] %}
+      {% endif %}
+    {% endif %}
+
+    {% if defined_prev or defined_next %}
+    <nav class="mt-12 pt-8 border-t border-gray-200">
+      <div class="flex items-stretch gap-4">
+        {% if defined_prev %}
+        <a href="{{ defined_prev.url }}" class="flex-1 group p-4 border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-gray-50 transition-all">
+          <div class="text-sm text-gray-500 mb-1">Previous</div>
+          <div class="font-semibold text-gray-900 group-hover:text-primary-600">{{ defined_prev.data.title }}</div>
+        </a>
+        {% else %}
+        <div class="flex-1"></div>
+        {% endif %}
+
+        {% if defined_next %}
+        <a href="{{ defined_next.url }}" class="flex-1 group p-4 border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-gray-50 transition-all text-right">
+          <div class="text-sm text-gray-500 mb-1">Next</div>
+          <div class="font-semibold text-gray-900 group-hover:text-primary-600">{{ defined_next.data.title }}</div>
+        </a>
+        {% else %}
+        <div class="flex-1"></div>
+        {% endif %}
+      </div>
+    </nav>
+    {% endif %}
+
+    {# Related docs #}
+    {% if related_docs and related_docs.length %}
+    <div class="mt-8 pt-8 border-t border-gray-200">
+      <h2 class="text-lg font-semibold mb-4">Related Documentation</h2>
+      <ul class="space-y-2">
+        {% for doc in related_docs %}
+        <li>
+          <a href="{{ doc.url }}" class="text-primary-600 hover:underline">{{ doc.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</article>

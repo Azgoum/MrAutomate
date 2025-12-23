@@ -15,11 +15,11 @@ sections:
   - title: "Resources"
     links:
       - label: "Documentation"
-        url: "#"
+        url: "/docs/"
       - label: "Getting Started"
-        url: "/blog/post-1/"
+        url: "/docs/getting-started/"
       - label: "GitHub"
-        url: "https://github.com"
+        url: "https://github.com/freshjuice-dev/freshjuice-11ty-starter"
   - title: "Legal"
     links:
       - label: "Privacy Policy"

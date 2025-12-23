@@ -22,6 +22,19 @@ export default function(eleventyConfig) {
       .filter((item) => !item.data.excludeFromCollections);
   });
 
+  // Docs collection
+  eleventyConfig.addCollection('docs', (collectionApi) => {
+    return collectionApi
+      .getFilteredByGlob('src/docs/*.md')
+      .sort((a, b) => {
+        // Sort by order if defined, otherwise alphabetically by title
+        const orderA = a.data.order ?? 999;
+        const orderB = b.data.order ?? 999;
+        if (orderA !== orderB) return orderA - orderB;
+        return (a.data.title || '').localeCompare(b.data.title || '');
+      });
+  });
+
   // All content for sitemap
   eleventyConfig.addCollection('sitemap', (collectionApi) => {
     return collectionApi.getAll().filter((item) => {

@@ -86,6 +86,35 @@ collections_config:
       default:
         path: .cloudcannon/schemas/post.md
 
+  docs:
+    path: docs
+    output: true
+    icon: menu_book
+    name: Documentation
+    singular_name: Document
+    description: Knowledge base and documentation
+    glob:
+      - "!**/*.json"
+    _enabled_editors:
+      - content
+      - data
+    _inputs:
+      layout:
+        hidden: true
+      permalink:
+        type: text
+        label: Permalink
+        comment: "Custom slug (e.g., getting-started). Auto-formatted to /docs/getting-started/"
+        options:
+          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          pattern_message: "Use lowercase letters, numbers, and hyphens only (e.g., getting-started)"
+    add_options:
+      - name: Add New Document
+        schema: default
+    schemas:
+      default:
+        path: .cloudcannon/schemas/docs.md
+
   authors:
     path: authors
     output: true
@@ -166,6 +195,7 @@ collection_groups:
   - heading: Content
     collections:
       - blog
+      - docs
       - pages
       - legal
   - heading: People
@@ -474,6 +504,22 @@ _inputs:
     type: switch
     label: Exclude from LLMs
     comment: Hide this page from LLM text files
+
+  # Docs inputs
+  category:
+    type: text
+    label: Category
+    comment: "Group documents by category (e.g., Getting Started, API Reference)"
+
+  order:
+    type: number
+    label: Order
+    comment: "Sort order within the category (lower numbers appear first)"
+
+  related_docs:
+    type: array
+    label: Related Documents
+    comment: "Links to related documentation"
 
   # General settings inputs - Metadata
   site_name:

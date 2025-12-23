@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+title: "Documentation"
+description: "Learn how to use and customize the FreshJuice starter."
+permalink: /docs/
+---
+{% from "_components/index.njk" import badge %}
+
+<section class="py-16 lg:py-24">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Documentation</h1>
+      <p class="text-xl text-stone-600 max-w-2xl mx-auto">
+        Everything you need to get started and build amazing sites.
+      </p>
+    </div>
+
+    {% if collections.docs | length %}
+    <div class="max-w-4xl mx-auto">
+      <div class="grid gap-4">
+        {% for doc in collections.docs %}
+        <a href="{{ doc.url }}" class="group block p-6 bg-white border border-stone-200 rounded-lg hover:border-primary-500 hover:shadow-md transition-all">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold text-stone-900 group-hover:text-primary-600 mb-2">{{ doc.data.title }}</h3>
+              {% if doc.data.description %}
+              <p class="text-stone-600">{{ doc.data.description }}</p>
+              {% endif %}
+            </div>
+            {% if doc.data.category %}
+            {{ badge({ text: doc.data.category, variant: "secondary" }) }}
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% else %}
+    <div class="text-center py-12">
+      <p class="text-stone-600">Documentation coming soon!</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
