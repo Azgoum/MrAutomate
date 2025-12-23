@@ -1,5 +1,7 @@
 {
   "layout": "layouts/post.njk",
   "tags": ["blog"],
-  "permalink": "/blog/{{ page.fileSlug }}/"
+  "eleventyComputed": {
+    "permalink": "{% if permalink %}/blog/{{ permalink | slugify }}/{% else %}/blog/{{ page.fileSlug }}/{% endif %}"
+  }
 }

@@ -44,6 +44,13 @@ collections_config:
     _inputs:
       layout:
         hidden: true
+      permalink:
+        type: text
+        label: Permalink
+        comment: "Custom slug (e.g., privacy-policy). Auto-formatted to /privacy-policy/"
+        options:
+          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          pattern_message: "Use lowercase letters, numbers, and hyphens only (e.g., privacy-policy)"
     add_options:
       - name: Add New Legal Page
         schema: default
@@ -65,6 +72,13 @@ collections_config:
     _inputs:
       layout:
         hidden: true
+      permalink:
+        type: text
+        label: Permalink
+        comment: "Custom slug (e.g., my-custom-slug). Auto-formatted to /blog/my-custom-slug/"
+        options:
+          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          pattern_message: "Use lowercase letters, numbers, and hyphens only (e.g., my-post-slug)"
     add_options:
       - name: Add New Post
         schema: default
@@ -446,7 +460,10 @@ _inputs:
   permalink:
     type: text
     label: Permalink
-    comment: "Custom URL path (e.g., /blog/my-custom-slug/)"
+    comment: "Full path with slashes (e.g., /about/ or /services/consulting/)"
+    options:
+      pattern: "^/[a-z0-9]+(-[a-z0-9]+)*(/[a-z0-9]+(-[a-z0-9]+)*)*/$"
+      pattern_message: "Use format /path/ or /nested/path/ with lowercase letters, numbers, and hyphens"
 
   noindex:
     type: switch
