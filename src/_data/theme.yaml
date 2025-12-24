@@ -1,0 +1,5 @@
+# Theme settings (developer-only, not exposed in CloudCannon CMS)
+# These settings can only be changed by editing this file directly
+
+# Show "Fork me on GitHub" ribbon in the corner
+show_github_ribbon: true
