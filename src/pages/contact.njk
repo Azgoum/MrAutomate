@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "Contact"
 description: "Get in touch with us. We would love to hear from you."
+heading: "Contact Us"
+subheading: "Have a question or want to work together? We would love to hear from you."
 permalink: /contact/
 ---
 {% from "_components/index.njk" import button %}
@@ -10,10 +12,8 @@ permalink: /contact/
   <div class="container mx-auto px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Contact Us</h1>
-        <p class="text-xl text-stone-600 max-w-2xl mx-auto">
-          Have a question or want to work together? We would love to hear from you.
-        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4 editable" data-editable="heading">{{ heading }}</h1>
+        <p class="text-xl text-stone-600 max-w-2xl mx-auto editable" data-editable="subheading">{{ subheading }}</p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12">

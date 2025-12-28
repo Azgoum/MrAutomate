@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "Customer Stories"
 description: "See how our customers achieved success with our solutions."
+heading: "Customer Stories"
+subheading: "Discover how businesses like yours achieved remarkable results."
 pagination:
   data: collections.stories
   size: 6
@@ -13,10 +15,8 @@ permalink: /stories/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNum
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Customer Stories</h1>
-      <p class="text-xl text-stone-600 max-w-2xl mx-auto">
-        Discover how businesses like yours achieved remarkable results.
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4 editable" data-editable="heading">{{ heading }}</h1>
+      <p class="text-xl text-stone-600 max-w-2xl mx-auto editable" data-editable="subheading">{{ subheading }}</p>
     </div>
 
     {% if stories | length %}

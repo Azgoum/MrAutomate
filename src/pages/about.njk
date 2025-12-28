@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "About"
 description: "Learn more about our company and what we do."
+heading: "About Us"
+subheading: "We are passionate about building beautiful, fast, and accessible websites that help businesses grow."
 permalink: /about/
 ---
 {% from "_components/index.njk" import button %}
@@ -9,10 +11,8 @@ permalink: /about/
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-6">About Us</h1>
-      <p class="text-xl text-stone-600 mb-12">
-        We are passionate about building beautiful, fast, and accessible websites that help businesses grow.
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-6 editable" data-editable="heading">{{ heading }}</h1>
+      <p class="text-xl text-stone-600 mb-12 editable" data-editable="subheading">{{ subheading }}</p>
 
       <div class="prose prose-lg max-w-none">
         <h2>Our Mission</h2>

@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "Pricing"
 description: "Simple, transparent pricing for teams of all sizes. Choose the plan that fits your needs."
+heading: "Simple, Transparent Pricing"
+subheading: "Choose the perfect plan for your needs. All plans include a 14-day free trial."
 permalink: /pricing/
 faq:
   - question: "Can I switch plans anytime?"
@@ -22,10 +24,8 @@ faq:
 {# Pricing Hero #}
 <section class="py-16 lg:py-24 bg-gradient-to-b from-stone-100 to-stone-50">
   <div class="container mx-auto px-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Simple, Transparent Pricing</h1>
-    <p class="text-xl text-stone-600 max-w-2xl mx-auto mb-10">
-      Choose the perfect plan for your needs. All plans include a 14-day free trial.
-    </p>
+    <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4 editable" data-editable="heading">{{ heading }}</h1>
+    <p class="text-xl text-stone-600 max-w-2xl mx-auto mb-10 editable" data-editable="subheading">{{ subheading }}</p>
 
     {# Billing Toggle #}
     <div

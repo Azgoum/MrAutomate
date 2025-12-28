@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "Blog"
 description: "Read our latest articles and insights."
+heading: "Blog"
+subheading: "Insights, tutorials, and updates from our team."
 pagination:
   data: collections.blog
   size: 3
@@ -13,10 +15,8 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Blog</h1>
-      <p class="text-xl text-stone-600 max-w-2xl mx-auto">
-        Insights, tutorials, and updates from our team.
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4 editable" data-editable="heading">{{ heading }}</h1>
+      <p class="text-xl text-stone-600 max-w-2xl mx-auto editable" data-editable="subheading">{{ subheading }}</p>
     </div>
 
     {% if posts | length %}

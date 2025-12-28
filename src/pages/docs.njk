@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "Documentation"
 description: "Learn how to use and customize the FreshJuice starter."
+heading: "Documentation"
+subheading: "Everything you need to get started and build amazing sites."
 permalink: /docs/
 ---
 {% from "_components/index.njk" import badge %}
@@ -9,10 +11,8 @@ permalink: /docs/
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Documentation</h1>
-      <p class="text-xl text-stone-600 max-w-2xl mx-auto">
-        Everything you need to get started and build amazing sites.
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4 editable" data-editable="heading">{{ heading }}</h1>
+      <p class="text-xl text-stone-600 max-w-2xl mx-auto editable" data-editable="subheading">{{ subheading }}</p>
     </div>
 
     {% if collections.docs | length %}

@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 title: "Case Studies"
 description: "Explore our technical case studies and project deep-dives."
+heading: "Case Studies"
+subheading: "Technical deep-dives into our projects, methodologies, and results."
 pagination:
   data: collections.cases
   size: 6
@@ -13,10 +15,8 @@ permalink: /cases/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumbe
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4">Case Studies</h1>
-      <p class="text-xl text-stone-600 max-w-2xl mx-auto">
-        Technical deep-dives into our projects, methodologies, and results.
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold text-stone-900 mb-4 editable" data-editable="heading">{{ heading }}</h1>
+      <p class="text-xl text-stone-600 max-w-2xl mx-auto editable" data-editable="subheading">{{ subheading }}</p>
     </div>
 
     {% if cases | length %}
