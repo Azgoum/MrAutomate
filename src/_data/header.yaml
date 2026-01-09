@@ -13,7 +13,7 @@ menu:
     url: "/pricing/"
   - label: "About"
     url: "/about/"
-  - label: "Blog"
+  - label: "Test"
     url: "/blog/"
   - label: "Contact"
     url: "/contact/"
