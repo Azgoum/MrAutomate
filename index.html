@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrAutomate.fr - Votre expert en automatisation pour TPE/PME</title>
+    <meta name="description" content="En 2026, toute entreprise a besoin d'un Mr Automate. Automatisez vos processus métier avec notre POC à 150€. Expert en n8n, Power BI et automatisation.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="robot-logo" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Robot head -->
+                    <rect x="20" y="15" width="40" height="35" rx="4" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                    <!-- Antenna -->
+                    <line x1="40" y1="15" x2="40" y2="8" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="40" cy="6" r="3" fill="#FF6B35"/>
+                    <!-- Eyes -->
+                    <circle cx="30" cy="28" r="5" fill="#1a1a1a"/>
+                    <circle cx="50" cy="28" r="5" fill="#1a1a1a"/>
+                    <circle cx="32" cy="26" r="2" fill="#00FF88"/>
+                    <circle cx="52" cy="26" r="2" fill="#00FF88"/>
+                    <!-- Mouth -->
+                    <rect x="28" y="38" width="24" height="8" rx="2" fill="#1a1a1a"/>
+                    <line x1="32" y1="38" x2="32" y2="46" stroke="#00D9FF" stroke-width="1"/>
+                    <line x1="36" y1="38" x2="36" y2="46" stroke="#00D9FF" stroke-width="1"/>
+                    <line x1="44" y1="38" x2="44" y2="46" stroke="#00D9FF" stroke-width="1"/>
+                    <line x1="48" y1="38" x2="48" y2="46" stroke="#00D9FF" stroke-width="1"/>
+                    <!-- Body -->
+                    <rect x="25" y="50" width="30" height="20" rx="3" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                    <circle cx="35" cy="60" r="3" fill="#FF6B35"/>
+                    <circle cx="45" cy="60" r="3" fill="#FF6B35"/>
+                    <!-- Arms -->
+                    <rect x="15" y="52" width="8" height="15" rx="2" fill="#00D9FF" stroke="#0099CC" stroke-width="1.5"/>
+                    <rect x="57" y="52" width="8" height="15" rx="2" fill="#00D9FF" stroke="#0099CC" stroke-width="1.5"/>
+                    <!-- Legs -->
+                    <rect x="28" y="70" width="8" height="8" rx="2" fill="#00D9FF" stroke="#0099CC" stroke-width="1.5"/>
+                    <rect x="44" y="70" width="8" height="8" rx="2" fill="#00D9FF" stroke="#0099CC" stroke-width="1.5"/>
+                </svg>
+                <span class="logo-text">MrAutomate<span class="logo-tld">.fr</span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#methode">Méthode</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="cta-nav">Démarrer</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="floating-circuit circuit-1"></div>
+            <div class="floating-circuit circuit-2"></div>
+            <div class="floating-circuit circuit-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🤖</span>
+                    <span>En 2026, toute entreprise a besoin d'un Mr Automate</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Automatisez.</span>
+                    <span class="title-line">Gagnez du temps.</span>
+                    <span class="title-line gradient-text">Développez-vous.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Votre expert en automatisation pour TPE/PME. Des processus plus fluides, 
+                    une équipe plus productive, et un POC livré en 1-2 jours pour seulement 150€.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Lancez votre POC à 150€</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#methode" class="btn btn-secondary">
+                        <span>Découvrir notre méthode</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">150€</div>
+                        <div class="stat-label">Pour un POC complet</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">1-2 jours</div>
+                        <div class="stat-label">Livraison express</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">500€/j</div>
+                        <div class="stat-label">Tarif projet</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="robot-container">
+                    <svg class="hero-robot" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Main body -->
+                        <g class="robot-body">
+                            <!-- Head -->
+                            <rect x="100" y="50" width="100" height="80" rx="8" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="3"/>
+                            <!-- Antenna with pulse -->
+                            <line x1="150" y1="50" x2="150" y2="25" stroke="#FF6B35" stroke-width="4" stroke-linecap="round"/>
+                            <circle cx="150" cy="20" r="8" fill="#FF6B35" class="pulse-dot"/>
+                            <!-- Eyes -->
+                            <circle cx="125" cy="75" r="12" fill="#0a0a0a"/>
+                            <circle cx="175" cy="75" r="12" fill="#0a0a0a"/>
+                            <circle cx="128" cy="72" r="6" fill="#00FF88" class="eye-glow"/>
+                            <circle cx="178" cy="72" r="6" fill="#00FF88" class="eye-glow"/>
+                            <!-- Mouth display -->
+                            <rect x="115" y="100" width="70" height="20" rx="4" fill="#0a0a0a"/>
+                            <g class="mouth-segments">
+                                <rect x="120" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
+                                <rect x="128" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
+                                <rect x="136" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
+                                <rect x="144" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
+                                <rect x="152" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
+                                <rect x="160" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
+                                <rect x="168" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
+                                <rect x="176" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
+                            </g>
+                            <!-- Torso -->
+                            <rect x="90" y="135" width="120" height="100" rx="8" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="3"/>
+                            <!-- Chest panel -->
+                            <rect x="110" y="155" width="80" height="60" rx="4" fill="#0a0a0a" opacity="0.3"/>
+                            <circle cx="150" cy="185" r="15" fill="#FF6B35" class="chest-core"/>
+                            <circle cx="130" cy="200" r="6" fill="#00FF88"/>
+                            <circle cx="150" cy="200" r="6" fill="#00FF88"/>
+                            <circle cx="170" cy="200" r="6" fill="#00FF88"/>
+                            <!-- Arms -->
+                            <rect x="60" y="140" width="25" height="80" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2" class="left-arm"/>
+                            <rect x="215" y="140" width="25" height="80" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2" class="right-arm"/>
+                            <!-- Hands -->
+                            <circle cx="72.5" cy="225" r="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                            <circle cx="227.5" cy="225" r="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                            <!-- Legs -->
+                            <rect x="110" y="240" width="35" height="90" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2"/>
+                            <rect x="155" y="240" width="35" height="90" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2"/>
+                            <!-- Feet -->
+                            <ellipse cx="127.5" cy="335" rx="25" ry="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                            <ellipse cx="172.5" cy="335" rx="25" ry="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                        </g>
+                        <!-- Definitions -->
+                        <defs>
+                            <linearGradient id="robotGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0099CC;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="robot-shadow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">Scroll</div>
+        </div>
+    </section>
+
+    <!-- Automation Banner -->
+    <section class="automation-banner">
+        <div class="banner-track">
+            <div class="banner-content">
+                <span class="banner-item"><span class="icon">⚡</span> Automatisation</span>
+                <span class="banner-item"><span class="icon">📊</span> Power BI</span>
+                <span class="banner-item"><span class="icon">🔗</span> n8n Workflows</span>
+                <span class="banner-item"><span class="icon">🤖</span> IA Intégrée</span>
+                <span class="banner-item"><span class="icon">📈</span> Productivité</span>
+                <span class="banner-item"><span class="icon">⏱️</span> Gain de temps</span>
+                <span class="banner-item"><span class="icon">💰</span> ROI rapide</span>
+                <span class="banner-item"><span class="icon">🎯</span> Sur-mesure</span>
+            </div>
+            <div class="banner-content" aria-hidden="true">
+                <span class="banner-item"><span class="icon">⚡</span> Automatisation</span>
+                <span class="banner-item"><span class="icon">📊</span> Power BI</span>
+                <span class="banner-item"><span class="icon">🔗</span> n8n Workflows</span>
+                <span class="banner-item"><span class="icon">🤖</span> IA Intégrée</span>
+                <span class="banner-item"><span class="icon">📈</span> Productivité</span>
+                <span class="banner-item"><span class="icon">⏱️</span> Gain de temps</span>
+                <span class="banner-item"><span class="icon">💰</span> ROI rapide</span>
+                <span class="banner-item"><span class="icon">🎯</span> Sur-mesure</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ce que je fais</span>
+                <h2 class="section-title">Automatisez tout ce qui peut l'être</h2>
+                <p class="section-subtitle">
+                    De la gestion de vos données à l'optimisation de vos processus métier, 
+                    je transforme vos tâches répétitives en workflows automatisés.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-index="0">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="10" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 25h20M20 30h15M20 35h20M20 40h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="45" cy="15" r="8" fill="#FF6B35"/>
+                            <path d="M42 15l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Automatisation de processus</h3>
+                    <p class="service-description">
+                        Workflows n8n sur-mesure pour automatiser vos tâches répétitives. 
+                        De la saisie de données à la génération de rapports, tout devient fluide et instantané.
+                    </p>
+                    <ul class="service-features">
+                        <li>Workflows n8n personnalisés</li>
+                        <li>Intégrations multi-outils</li>
+                        <li>Déclencheurs intelligents</li>
+                        <li>Disponibilité 24/7</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-index="1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="15" width="44" height="30" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 25l8 8 12-12" stroke="#00FF88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="15" y="37" width="30" height="2" fill="currentColor" opacity="0.3"/>
+                            <circle cx="50" cy="20" r="6" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Tableaux de bord Power BI</h3>
+                    <p class="service-description">
+                        Visualisez vos données en temps réel avec des dashboards personnalisés. 
+                        Prenez des décisions éclairées grâce à des insights actionnables.
+                    </p>
+                    <ul class="service-features">
+                        <li>Dashboards interactifs</li>
+                        <li>KPIs personnalisés</li>
+                        <li>Mises à jour temps réel</li>
+                        <li>Rapports automatisés</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-index="2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="4" fill="#00FF88"/>
+                            <path d="M30 10v8M30 42v8M50 30h-8M18 30h-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M43 17l-5.5 5.5M22.5 37.5L17 43M43 43l-5.5-5.5M22.5 22.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gestion capacitaire</h3>
+                    <p class="service-description">
+                        Optimisez la charge de travail de vos équipes avec un système éprouvé en banque. 
+                        Anticipez les besoins, équilibrez les ressources.
+                    </p>
+                    <ul class="service-features">
+                        <li>Planification intelligente</li>
+                        <li>Analyse de charge</li>
+                        <li>Prévisions automatiques</li>
+                        <li>Optimisation continue</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-index="3">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 30h10l5-10 5 20 5-10h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="10" y="10" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                            <circle cx="45" cy="15" r="8" fill="#FF6B35"/>
+                            <path d="M42 15h6M45 12v6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Intégrations & API</h3>
+                    <p class="service-description">
+                        Connectez tous vos outils entre eux. CRM, ERP, comptabilité, communication... 
+                        Un écosystème unifié pour une efficacité maximale.
+                    </p>
+                    <ul class="service-features">
+                        <li>Synchronisation multi-outils</li>
+                        <li>APIs personnalisées</li>
+                        <li>Webhooks automatiques</li>
+                        <li>Flux de données optimisés</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section -->
+    <section id="methode" class="method">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Notre approche</span>
+                <h2 class="section-title">Un POC à 150€, puis on construit ensemble</h2>
+                <p class="section-subtitle">
+                    Testez avant d'investir. Mon approche unique permet de valider votre projet 
+                    avec un POC fonctionnel livré en 1-2 jours pour seulement 150€.
+                </p>
+            </div>
+
+            <div class="method-showcase">
+                <div class="showcase-card primary-card">
+                    <div class="card-tag">L'offre phare</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="30" stroke="#00D9FF" stroke-width="3"/>
+                            <path d="M28 40l8 8 16-16" stroke="#00FF88" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="65" cy="15" r="10" fill="#FF6B35"/>
+                            <text x="65" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">POC</text>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">POC Express</h3>
+                    <div class="card-price">
+                        <span class="price-amount">150€</span>
+                        <span class="price-label">Livré en 1-2 jours</span>
+                    </div>
+                    <p class="card-description">
+                        Un proof of concept complet pour valider la faisabilité technique 
+                        et le ROI de votre projet d'automatisation. Zéro risque, résultat garanti.
+                    </p>
+                    <ul class="card-benefits">
+                        <li><span class="check">✓</span> Analyse de votre besoin</li>
+                        <li><span class="check">✓</span> Prototype fonctionnel</li>
+                        <li><span class="check">✓</span> Démonstration en direct</li>
+                        <li><span class="check">✓</span> Estimation projet complète</li>
+                    </ul>
+                    <a href="#contact" class="card-cta">
+                        Commander mon POC
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="method-steps">
+                    <div class="step-item" data-step="1">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Audit éclair</h4>
+                            <p>On analyse ensemble vos processus actuels et identifie les quick wins.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item" data-step="2">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>POC en 24-48h</h4>
+                            <p>Livraison d'un prototype fonctionnel qui démontre la valeur immédiate.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item" data-step="3">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Déploiement</h4>
+                            <p>Si le POC convainc, on industrialise à 500€/jour avec planning précis.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item" data-step="4">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Support continu</h4>
+                            <p>Formation, documentation et ajustements pour une autonomie totale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <svg class="note-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="#00FF88" stroke-width="2"/>
+                    <path d="M12 8v4M12 16h.01" stroke="#00FF88" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <p>
+                    <strong>Tarification transparente :</strong> POC à 150€ pour tester, 
+                    puis projets à 500€/jour. Pas de frais cachés, pas de surprise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">Mon parcours</span>
+                    <h2 class="section-title">De la banque à votre entreprise</h2>
+                    <div class="about-story">
+                        <p>
+                            Pendant plusieurs années, j'ai automatisé la gestion capacitaire du personnel 
+                            dans une grande banque française. Des centaines de collaborateurs, des milliers 
+                            de tâches, et un système devenu indispensable au quotidien.
+                        </p>
+                        <p>
+                            Avec <strong>Power BI</strong> pour la visualisation et <strong>n8n</strong> pour 
+                            l'orchestration, j'ai transformé un processus manuel chronophage en un système 
+                            fluide et prédictif. Résultat : équipes plus sereines, managers mieux informés, 
+                            et des heures récupérées chaque semaine.
+                        </p>
+                        <p>
+                            Aujourd'hui, je mets cette expertise au service des <strong>TPE et PME</strong> 
+                            qui veulent gagner en efficacité sans exploser leur budget. En 2026, 
+                            l'automatisation n'est plus un luxe, c'est une nécessité.
+                        </p>
+                    </div>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">⚡</div>
+                            <h4>Rapidité</h4>
+                            <p>POC en 1-2 jours, projets livrés dans les délais</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">💡</div>
+                            <h4>Pragmatisme</h4>
+                            <p>Solutions simples qui fonctionnent vraiment</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <h4>ROI mesurable</h4>
+                            <p>Chaque euro investi doit rapporter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <h3 class="stack-title">Ma Stack Technique</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <div class="tech-logo">n8n</div>
+                                <span class="tech-name">n8n</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">PBI</div>
+                                <span class="tech-name">Power BI</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">API</div>
+                                <span class="tech-name">REST APIs</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">DB</div>
+                                <span class="tech-name">Databases</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">AI</div>
+                                <span class="tech-name">IA Tools</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">⚙️</div>
+                                <span class="tech-name">Webhooks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="exp-icon">🏦</div>
+                        <div class="exp-content">
+                            <h4>Secteur bancaire</h4>
+                            <p>Plusieurs années d'expertise en automatisation de processus critiques</p>
+                            <div class="exp-tag">Gestion capacitaire • Power BI • n8n</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Questions fréquentes</span>
+                <h2 class="section-title">Tout ce que vous devez savoir</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qu'est-ce qu'un POC et pourquoi 150€ seulement ?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Un POC (Proof of Concept) est un prototype fonctionnel qui démontre la faisabilité 
+                            de votre projet. Pour 150€, vous obtenez une version simplifiée mais opérationnelle 
+                            de votre automatisation, livrée en 1-2 jours. C'est un investissement minimal pour 
+                            valider l'intérêt du projet avant de s'engager sur un développement complet.
+                        </p>
+                        <p>
+                            Ce tarif mini me permet de tester la compatibilité avec votre besoin, et à vous 
+                            de voir concrètement le résultat avant d'investir davantage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Je suis une TPE, l'automatisation est-elle faite pour moi ?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Absolument ! Les TPE/PME sont même les premières à bénéficier de l'automatisation. 
+                            Quand chaque heure compte et que les ressources sont limitées, automatiser les tâches 
+                            répétitives (saisie de données, envoi d'emails, génération de rapports) libère 
+                            un temps précieux pour se concentrer sur le cœur de métier.
+                        </p>
+                        <p>
+                            Avec un POC à 150€, vous pouvez tester sans risque et mesurer rapidement le gain de temps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quels types de processus peuvent être automatisés ?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pratiquement tout ce qui est répétitif et suit des règles définies :</p>
+                        <ul>
+                            <li>Saisie et transfert de données entre logiciels</li>
+                            <li>Génération automatique de rapports et tableaux de bord</li>
+                            <li>Envoi d'emails et notifications automatiques</li>
+                            <li>Gestion de la relation client (CRM)</li>
+                            <li>Synchronisation de vos outils (comptabilité, facturation, stock)</li>
+                            <li>Collecte et analyse de données métier</li>
+                        </ul>
+                        <p>
+                            Si vous vous dites "je fais toujours la même chose", c'est automatisable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Après le POC, combien coûte le projet complet ?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Les projets sont facturés à <strong>500€ par jour</strong>. Après le POC, 
+                            je vous donne une estimation précise en nombre de jours nécessaires pour 
+                            industrialiser la solution.
+                        </p>
+                        <p>
+                            Un projet simple (1-2 workflows) prend généralement 2-4 jours. Un projet 
+                            complexe avec plusieurs intégrations peut aller jusqu'à 8-12 jours. Tout 
+                            est cadré et transparent dès le départ.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>J'utilise déjà des outils, puis-je les connecter ?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Oui, c'est même l'objectif ! n8n permet de connecter plus de 400 applications : 
+                            Google Workspace, Microsoft 365, CRM (HubSpot, Salesforce), comptabilité (Pennylane, 
+                            QuickBooks), e-commerce (Shopify, WooCommerce), et bien d'autres.
+                        </p>
+                        <p>
+                            Si votre outil n'a pas d'intégration native, je peux créer des connexions 
+                            personnalisées via API. L'idée est de faire travailler vos outils ensemble, 
+                            pas de tout remplacer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Comment se passe la maintenance après le déploiement ?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            L'objectif est de vous rendre <strong>autonome</strong>. Je documente tout 
+                            et forme votre équipe pour que vous puissiez gérer les petits ajustements 
+                            vous-mêmes.
+                        </p>
+                        <p>
+                            Pour les évolutions plus complexes ou le support technique, je reste disponible 
+                            en intervention ponctuelle ou sous forme de forfait mensuel selon vos besoins. 
+                            Pas d'abonnement forcé, vous payez uniquement ce dont vous avez besoin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <p>Vous avez d'autres questions ?</p>
+                <a href="#contact" class="btn btn-primary">Discutons de votre projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">
+                    <span class="badge-pulse"></span>
+                    <span>Disponible pour de nouveaux projets</span>
+                </div>
+                <h2 class="cta-title">Prêt à automatiser ?</h2>
+                <p class="cta-subtitle">
+                    Un premier échange pour comprendre vos enjeux, identifier ce qui peut être automatisé, 
+                    et lancer votre POC en 24-48h. Sans engagement.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-large">
+                    <span>Commander mon POC à 150€</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Passons à l'action</h2>
+                    <p class="contact-description">
+                        Racontez-moi votre problématique, et je vous dirai comment l'automatiser. 
+                        Réponse sous 24h garantie.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <a href="mailto:contact@mrautomate.fr" class="contact-value">contact@mrautomate.fr</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Localisation</div>
+                                <div class="contact-value">France • Remote</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Disponibilité</div>
+                                <div class="contact-value">Réponse sous 24h</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-guarantee">
+                        <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#00FF88" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <strong>POC Express gratuit</strong> si votre projet ne peut pas être automatisé
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="jean@entreprise.fr">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Type de projet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un type</option>
+                                <option value="poc">POC à 150€</option>
+                                <option value="automatisation">Automatisation de processus</option>
+                                <option value="powerbi">Tableau de bord Power BI</option>
+                                <option value="integration">Intégration d'outils</option>
+                                <option value="capacitaire">Gestion capacitaire</option>
+                                <option value="autre">Autre besoin</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Décrivez votre besoin</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Quel processus souhaitez-vous automatiser ? Quels outils utilisez-vous actuellement ?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Envoyer ma demande</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11m9-9l-6 16-3-7-7-3 16-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <p class="form-note">
+                            Vos données sont protégées et ne seront jamais partagées. 
+                            Réponse sous 24h garantie.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="robot-logo" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="15" width="40" height="35" rx="4" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                            <line x1="40" y1="15" x2="40" y2="8" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="40" cy="6" r="3" fill="#FF6B35"/>
+                            <circle cx="30" cy="28" r="5" fill="#1a1a1a"/>
+                            <circle cx="50" cy="28" r="5" fill="#1a1a1a"/>
+                            <circle cx="32" cy="26" r="2" fill="#00FF88"/>
+                            <circle cx="52" cy="26" r="2" fill="#00FF88"/>
+                            <rect x="28" y="38" width="24" height="8" rx="2" fill="#1a1a1a"/>
+                            <rect x="25" y="50" width="30" height="20" rx="3" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
+                            <circle cx="35" cy="60" r="3" fill="#FF6B35"/>
+                            <circle cx="45" cy="60" r="3" fill="#FF6B35"/>
+                        </svg>
+                        <span class="logo-text">MrAutomate<span class="logo-tld">.fr</span></span>
+                    </div>
+                    <p class="footer-tagline">
+                        En 2026, toute entreprise a besoin d'un Mr Automate.
+                        <br>Automatisez. Optimisez. Croissez.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#methode">Méthode</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Automatisation processus</a></li>
+                            <li><a href="#services">Tableaux de bord</a></li>
+                            <li><a href="#services">Gestion capacitaire</a></li>
+                            <li><a href="#services">Intégrations API</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:contact@mrautomate.fr">contact@mrautomate.fr</a></li>
+                            <li>France • Remote</li>
+                            <li>Réponse sous 24h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MrAutomate.fr - Tous droits réservés</p>
+                <div class="footer-legal">
+                    <a href="#mentions">Mentions légales</a>
+                    <span>•</span>
+                    <a href="#confidentialite">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
