@@ -99,62 +99,51 @@ document.querySelectorAll('.step-item').forEach((step, index) => {
     observer.observe(step);
 });
 
-// Form validation and submission
+// Form validation and submission via Web3Forms
 const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('form-success');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to a server
-        // For now, we'll just show an alert
-        console.log('Form data:', data);
-        
-        // Create mailto link
-        const subject = encodeURIComponent(`${data.subject} - ${data.name}`);
-        const body = encodeURIComponent(
-            `Nom: ${data.name}\n` +
-            `Email: ${data.email}\n` +
-            `Téléphone: ${data.phone || 'Non renseigné'}\n` +
-            `Type de projet: ${data.subject}\n\n` +
-            `Message:\n${data.message}`
-        );
-        
-        const mailtoLink = `mailto:contact@mrautomate.fr?subject=${subject}&body=${body}`;
-        
-        // Show success message
-        const successMsg = document.createElement('div');
-        successMsg.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background: linear-gradient(135deg, #00D9FF 0%, #0099CC 100%);
-            color: #0a0a0a;
-            padding: 1.5rem 2rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 217, 255, 0.3);
-            font-weight: 600;
-            z-index: 10000;
-            animation: slideIn 0.5s ease;
-        `;
-        successMsg.textContent = '✓ Votre message a été envoyé ! Nous vous répondrons sous 24h.';
-        document.body.appendChild(successMsg);
-        
-        // Open mail client
-        window.location.href = mailtoLink;
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Remove success message after 5 seconds
-        setTimeout(() => {
-            successMsg.style.animation = 'slideOut 0.5s ease';
-            setTimeout(() => successMsg.remove(), 500);
-        }, 5000);
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Envoi en cours...</span>';
+        submitBtn.disabled = true;
+
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                // Show success message
+                if (formSuccess) {
+                    formSuccess.style.display = 'block';
+                }
+                contactForm.reset();
+
+                // Hide success message after 8 seconds
+                setTimeout(() => {
+                    if (formSuccess) {
+                        formSuccess.style.display = 'none';
+                    }
+                }, 8000);
+            } else {
+                alert('Une erreur est survenue. Veuillez réessayer ou nous contacter directement à contact@mrautomate.fr');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            alert('Une erreur est survenue. Veuillez réessayer ou nous contacter directement à contact@mrautomate.fr');
+        }
+
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
     });
 }
 

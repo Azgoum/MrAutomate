@@ -48,7 +48,6 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#methode">Méthode</a></li>
-                <li><a href="#about">À propos</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact" class="cta-nav">Démarrer</a></li>
             </ul>
@@ -61,14 +60,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg">
-            <div class="grid-overlay"></div>
-            <div class="floating-circuit circuit-1"></div>
-            <div class="floating-circuit circuit-2"></div>
-            <div class="floating-circuit circuit-3"></div>
-        </div>
-        <div class="container hero-container">
+    <section class="hero hero-simple">
+        <div class="container hero-container-simple">
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="badge-icon">🤖</span>
@@ -80,7 +73,7 @@
                     <span class="title-line gradient-text">Développez-vous.</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Votre expert en automatisation pour TPE/PME. Des processus plus fluides, 
+                    Votre expert en automatisation pour TPE/PME. Des processus plus fluides,
                     une équipe plus productive, et un POC livré en 1-2 jours pour seulement 150€.
                 </p>
                 <div class="hero-cta">
@@ -90,8 +83,8 @@
                             <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="#methode" class="btn btn-secondary">
-                        <span>Découvrir notre méthode</span>
+                    <a href="#services" class="btn btn-secondary">
+                        <span>Découvrir les services</span>
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -111,99 +104,9 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="robot-container">
-                    <svg class="hero-robot" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Main body -->
-                        <g class="robot-body">
-                            <!-- Head -->
-                            <rect x="100" y="50" width="100" height="80" rx="8" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="3"/>
-                            <!-- Antenna with pulse -->
-                            <line x1="150" y1="50" x2="150" y2="25" stroke="#FF6B35" stroke-width="4" stroke-linecap="round"/>
-                            <circle cx="150" cy="20" r="8" fill="#FF6B35" class="pulse-dot"/>
-                            <!-- Eyes -->
-                            <circle cx="125" cy="75" r="12" fill="#0a0a0a"/>
-                            <circle cx="175" cy="75" r="12" fill="#0a0a0a"/>
-                            <circle cx="128" cy="72" r="6" fill="#00FF88" class="eye-glow"/>
-                            <circle cx="178" cy="72" r="6" fill="#00FF88" class="eye-glow"/>
-                            <!-- Mouth display -->
-                            <rect x="115" y="100" width="70" height="20" rx="4" fill="#0a0a0a"/>
-                            <g class="mouth-segments">
-                                <rect x="120" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
-                                <rect x="128" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
-                                <rect x="136" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
-                                <rect x="144" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
-                                <rect x="152" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
-                                <rect x="160" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
-                                <rect x="168" y="103" width="3" height="14" fill="#00D9FF" opacity="0.8"/>
-                                <rect x="176" y="103" width="3" height="14" fill="#00D9FF" opacity="0.6"/>
-                            </g>
-                            <!-- Torso -->
-                            <rect x="90" y="135" width="120" height="100" rx="8" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="3"/>
-                            <!-- Chest panel -->
-                            <rect x="110" y="155" width="80" height="60" rx="4" fill="#0a0a0a" opacity="0.3"/>
-                            <circle cx="150" cy="185" r="15" fill="#FF6B35" class="chest-core"/>
-                            <circle cx="130" cy="200" r="6" fill="#00FF88"/>
-                            <circle cx="150" cy="200" r="6" fill="#00FF88"/>
-                            <circle cx="170" cy="200" r="6" fill="#00FF88"/>
-                            <!-- Arms -->
-                            <rect x="60" y="140" width="25" height="80" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2" class="left-arm"/>
-                            <rect x="215" y="140" width="25" height="80" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2" class="right-arm"/>
-                            <!-- Hands -->
-                            <circle cx="72.5" cy="225" r="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
-                            <circle cx="227.5" cy="225" r="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
-                            <!-- Legs -->
-                            <rect x="110" y="240" width="35" height="90" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2"/>
-                            <rect x="155" y="240" width="35" height="90" rx="6" fill="url(#robotGradient)" stroke="#00D9FF" stroke-width="2"/>
-                            <!-- Feet -->
-                            <ellipse cx="127.5" cy="335" rx="25" ry="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
-                            <ellipse cx="172.5" cy="335" rx="25" ry="12" fill="#00D9FF" stroke="#0099CC" stroke-width="2"/>
-                        </g>
-                        <!-- Definitions -->
-                        <defs>
-                            <linearGradient id="robotGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#0099CC;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <div class="robot-shadow"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="scroll-text">Scroll</div>
         </div>
     </section>
 
-    <!-- Automation Banner -->
-    <section class="automation-banner">
-        <div class="banner-track">
-            <div class="banner-content">
-                <span class="banner-item"><span class="icon">⚡</span> Automatisation</span>
-                <span class="banner-item"><span class="icon">📊</span> Power BI</span>
-                <span class="banner-item"><span class="icon">🔗</span> n8n Workflows</span>
-                <span class="banner-item"><span class="icon">🤖</span> IA Intégrée</span>
-                <span class="banner-item"><span class="icon">📈</span> Productivité</span>
-                <span class="banner-item"><span class="icon">⏱️</span> Gain de temps</span>
-                <span class="banner-item"><span class="icon">💰</span> ROI rapide</span>
-                <span class="banner-item"><span class="icon">🎯</span> Sur-mesure</span>
-            </div>
-            <div class="banner-content" aria-hidden="true">
-                <span class="banner-item"><span class="icon">⚡</span> Automatisation</span>
-                <span class="banner-item"><span class="icon">📊</span> Power BI</span>
-                <span class="banner-item"><span class="icon">🔗</span> n8n Workflows</span>
-                <span class="banner-item"><span class="icon">🤖</span> IA Intégrée</span>
-                <span class="banner-item"><span class="icon">📈</span> Productivité</span>
-                <span class="banner-item"><span class="icon">⏱️</span> Gain de temps</span>
-                <span class="banner-item"><span class="icon">💰</span> ROI rapide</span>
-                <span class="banner-item"><span class="icon">🎯</span> Sur-mesure</span>
-            </div>
-        </div>
-    </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
@@ -404,94 +307,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <span class="section-tag">Mon parcours</span>
-                    <h2 class="section-title">De la banque à votre entreprise</h2>
-                    <div class="about-story">
-                        <p>
-                            Pendant plusieurs années, j'ai automatisé la gestion capacitaire du personnel 
-                            dans une grande banque française. Des centaines de collaborateurs, des milliers 
-                            de tâches, et un système devenu indispensable au quotidien.
-                        </p>
-                        <p>
-                            Avec <strong>Power BI</strong> pour la visualisation et <strong>n8n</strong> pour 
-                            l'orchestration, j'ai transformé un processus manuel chronophage en un système 
-                            fluide et prédictif. Résultat : équipes plus sereines, managers mieux informés, 
-                            et des heures récupérées chaque semaine.
-                        </p>
-                        <p>
-                            Aujourd'hui, je mets cette expertise au service des <strong>TPE et PME</strong> 
-                            qui veulent gagner en efficacité sans exploser leur budget. En 2026, 
-                            l'automatisation n'est plus un luxe, c'est une nécessité.
-                        </p>
-                    </div>
-
-                    <div class="about-values">
-                        <div class="value-item">
-                            <div class="value-icon">⚡</div>
-                            <h4>Rapidité</h4>
-                            <p>POC en 1-2 jours, projets livrés dans les délais</p>
-                        </div>
-                        <div class="value-item">
-                            <div class="value-icon">💡</div>
-                            <h4>Pragmatisme</h4>
-                            <p>Solutions simples qui fonctionnent vraiment</p>
-                        </div>
-                        <div class="value-item">
-                            <div class="value-icon">🎯</div>
-                            <h4>ROI mesurable</h4>
-                            <p>Chaque euro investi doit rapporter</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-visual">
-                    <div class="tech-stack">
-                        <h3 class="stack-title">Ma Stack Technique</h3>
-                        <div class="tech-grid">
-                            <div class="tech-item">
-                                <div class="tech-logo">n8n</div>
-                                <span class="tech-name">n8n</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-logo">PBI</div>
-                                <span class="tech-name">Power BI</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-logo">API</div>
-                                <span class="tech-name">REST APIs</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-logo">DB</div>
-                                <span class="tech-name">Databases</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-logo">AI</div>
-                                <span class="tech-name">IA Tools</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-logo">⚙️</div>
-                                <span class="tech-name">Webhooks</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experience-card">
-                        <div class="exp-icon">🏦</div>
-                        <div class="exp-content">
-                            <h4>Secteur bancaire</h4>
-                            <p>Plusieurs années d'expertise en automatisation de processus critiques</p>
-                            <div class="exp-tag">Gestion capacitaire • Power BI • n8n</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="faq">
@@ -587,47 +402,6 @@
                     </div>
                 </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>J'utilise déjà des outils, puis-je les connecter ?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Oui, c'est même l'objectif ! n8n permet de connecter plus de 400 applications : 
-                            Google Workspace, Microsoft 365, CRM (HubSpot, Salesforce), comptabilité (Pennylane, 
-                            QuickBooks), e-commerce (Shopify, WooCommerce), et bien d'autres.
-                        </p>
-                        <p>
-                            Si votre outil n'a pas d'intégration native, je peux créer des connexions 
-                            personnalisées via API. L'idée est de faire travailler vos outils ensemble, 
-                            pas de tout remplacer.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Comment se passe la maintenance après le déploiement ?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            L'objectif est de vous rendre <strong>autonome</strong>. Je documente tout 
-                            et forme votre équipe pour que vous puissiez gérer les petits ajustements 
-                            vous-mêmes.
-                        </p>
-                        <p>
-                            Pour les évolutions plus complexes ou le support technique, je reste disponible 
-                            en intervention ponctuelle ou sous forme de forfait mensuel selon vos besoins. 
-                            Pas d'abonnement forcé, vous payez uniquement ce dont vous avez besoin.
-                        </p>
-                    </div>
-                </div>
             </div>
 
             <div class="faq-cta">
@@ -637,28 +411,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-badge">
-                    <span class="badge-pulse"></span>
-                    <span>Disponible pour de nouveaux projets</span>
-                </div>
-                <h2 class="cta-title">Prêt à automatiser ?</h2>
-                <p class="cta-subtitle">
-                    Un premier échange pour comprendre vos enjeux, identifier ce qui peut être automatisé, 
-                    et lancer votre POC en 24-48h. Sans engagement.
-                </p>
-                <a href="#contact" class="btn btn-primary btn-large">
-                    <span>Commander mon POC à 150€</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -722,7 +474,12 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="redirect" value="https://mrautomate.fr#contact">
+                        <input type="hidden" name="from_name" value="MrAutomate.fr">
+                        <input type="hidden" name="subject" value="Nouvelle demande - MrAutomate.fr">
+
                         <div class="form-group">
                             <label for="name">Nom complet</label>
                             <input type="text" id="name" name="name" required placeholder="Jean Dupont">
@@ -740,21 +497,25 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="subject">Type de projet</label>
-                            <select id="subject" name="subject" required>
+                            <label for="project_type">Type de projet</label>
+                            <select id="project_type" name="project_type" required>
                                 <option value="">Sélectionnez un type</option>
-                                <option value="poc">POC à 150€</option>
-                                <option value="automatisation">Automatisation de processus</option>
-                                <option value="powerbi">Tableau de bord Power BI</option>
-                                <option value="integration">Intégration d'outils</option>
-                                <option value="capacitaire">Gestion capacitaire</option>
-                                <option value="autre">Autre besoin</option>
+                                <option value="POC à 150€">POC à 150€</option>
+                                <option value="Automatisation de processus">Automatisation de processus</option>
+                                <option value="Tableau de bord Power BI">Tableau de bord Power BI</option>
+                                <option value="Intégration d'outils">Intégration d'outils</option>
+                                <option value="Gestion capacitaire">Gestion capacitaire</option>
+                                <option value="Autre besoin">Autre besoin</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Décrivez votre besoin</label>
                             <textarea id="message" name="message" rows="5" required placeholder="Quel processus souhaitez-vous automatiser ? Quels outils utilisez-vous actuellement ?"></textarea>
+                        </div>
+
+                        <div id="form-success" class="form-success" style="display: none;">
+                            Votre message a bien été envoyé ! Je vous réponds sous 24h.
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-full">
@@ -765,7 +526,7 @@
                         </button>
 
                         <p class="form-note">
-                            Vos données sont protégées et ne seront jamais partagées. 
+                            Vos données sont protégées et ne seront jamais partagées.
                             Réponse sous 24h garantie.
                         </p>
                     </form>
@@ -807,7 +568,6 @@
                         <ul>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#methode">Méthode</a></li>
-                            <li><a href="#about">À propos</a></li>
                             <li><a href="#faq">FAQ</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
