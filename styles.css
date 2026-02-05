@@ -237,6 +237,14 @@ body {
     justify-content: center;
 }
 
+.hero-description {
+    font-size: 1.35rem;
+    color: var(--text);
+    margin-bottom: var(--space-lg);
+    max-width: 600px;
+    text-align: center;
+}
+
 .hero-bg {
     position: absolute;
     inset: 0;
@@ -981,6 +989,57 @@ section {
     box-shadow: var(--shadow-glow);
 }
 
+/* Method Cards Grid */
+.method-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--gradient-warm);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-banner-secondary {
+    background: var(--gradient-primary);
+    color: var(--dark);
+}
+
+.showcase-card.secondary-card {
+    border-color: var(--accent);
+}
+
+.showcase-card.secondary-card::before {
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+}
+
+.card-cta-secondary {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.card-cta-secondary:hover {
+    background: rgba(0, 217, 255, 0.1);
+}
+
+.showcase-card .card-title {
+    margin-top: 2rem;
+}
+
 /* Method Steps */
 .method-steps {
     display: flex;
@@ -1580,6 +1639,57 @@ section {
 
 .footer-legal a:hover {
     color: var(--primary);
+}
+
+/* ========== LEGAL PAGE ========== */
+.legal-section {
+    padding: 8rem 0 4rem;
+    min-height: 100vh;
+}
+
+.legal-title {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: var(--space-lg);
+}
+
+.legal-content {
+    max-width: 800px;
+}
+
+.legal-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.legal-content p {
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.legal-content a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+.legal-update {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(0, 217, 255, 0.2);
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* ========== RESPONSIVE ========== */

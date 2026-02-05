@@ -244,15 +244,15 @@ const animateNumber = (element, target, duration = 2000) => {
     }, 16);
 };
 
-// Observe stats
+// Observe stats with data-target attribute
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const value = entry.target.querySelector('.stat-value');
             if (value && !value.classList.contains('animated')) {
                 value.classList.add('animated');
-                const target = parseInt(value.textContent);
-                if (!isNaN(target)) {
+                const target = parseInt(value.getAttribute('data-target')) || parseInt(value.textContent);
+                if (!isNaN(target) && target > 0) {
                     animateNumber(value, target);
                 }
             }

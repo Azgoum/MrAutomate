@@ -1,0 +1,65 @@
+Section;Element;Texte actuel;Fichier;Ligne approximative
+Hero;Titre principal;Chaque entreprise a besoin de son Mr Automate.;index.html;70
+Hero;Sous-titre (bleu);Automatisez, gagnez du temps, réduisez les coûts.;index.html;73
+Hero;Description;En 2 jours et 150€, visualisez la solution dont vous rêvez.;index.html;76
+Hero;Bouton principal;Lancez votre POC à 150€;index.html;80
+Hero;Bouton secondaire;Découvrir notre approche;index.html;86
+Hero;Compteur 1 label;POC livrés;index.html;92
+Hero;Compteur 2 label;Outils sur-mesure créés;index.html;97
+Hero;Compteur 3 label;Entreprises automatisées;index.html;102
+Methode;Tag section;Notre approche;index.html;112
+Methode;Titre section;Deux façons de démarrer;index.html;113
+Methode;Sous-titre section;Choisissez l'approche qui correspond à vos besoins.;index.html;115
+POC Express;Bandeau;L'offre phare;index.html;120
+POC Express;Titre carte;POC Express;index.html;121
+POC Express;Prix;150€;index.html;123
+POC Express;Délai;Livré en 1-2 jours;index.html;124
+POC Express;Description;Un proof of concept complet pour valider la faisabilité technique et le ROI de votre projet d'automatisation.;index.html;126
+POC Express;Avantage 1;Analyse de votre besoin;index.html;130
+POC Express;Avantage 2;Prototype fonctionnel entre vos mains;index.html;131
+POC Express;Avantage 3;Démonstration en direct;index.html;132
+POC Express;Avantage 4;Estimation projet complète;index.html;133
+POC Express;Bouton;Commander mon POC;index.html;135
+Audit;Bandeau;Approche globale;index.html;143
+Audit;Titre carte;Audit d'automatisation;index.html;144
+Audit;Prix;Sur Devis;index.html;146
+Audit;Délai;Selon la taille de votre entreprise;index.html;147
+Audit;Description;À travers une série d'entretiens et de visites au sein de votre entreprise, j'identifie et propose plusieurs opportunités d'automatisation adaptées à vos processus.;index.html;149
+Audit;Avantage 1;Entretiens avec vos équipes;index.html;153
+Audit;Avantage 2;Analyse de vos processus existants;index.html;154
+Audit;Avantage 3;Rapport détaillé des opportunités;index.html;155
+Audit;Avantage 4;Priorisation et feuille de route;index.html;156
+Audit;Bouton;Demander un audit;index.html;158
+FAQ;Tag section;Questions fréquentes;index.html;170
+FAQ;Titre section;Tout ce que vous devez savoir;index.html;171
+FAQ;Question 1;Qu'est-ce qu'un POC et pourquoi 150€ seulement ?;index.html;175
+FAQ;Réponse 1 (partie 1);Un POC (Proof of Concept) est un prototype fonctionnel qui démontre la faisabilité de votre projet...;index.html;181
+FAQ;Réponse 1 (partie 2);Ce tarif mini me permet de tester la compatibilité avec votre besoin...;index.html;186
+FAQ;Question 2;Quels types de processus peuvent être automatisés ?;index.html;193
+FAQ;Réponse 2;Quasiment tout ce qui n'implique que de l'informatique.;index.html;199
+FAQ;Question 3;Après le POC, combien coûte le projet complet ?;index.html;204
+FAQ;Réponse 3;Les projets sont facturés à 500€ par jour...;index.html;210
+FAQ;CTA question;Vous avez d'autres questions ?;index.html;223
+FAQ;CTA bouton;Discutons de votre projet;index.html;224
+Contact;Tag section;Contact;index.html;231
+Contact;Titre section;Passons à l'action;index.html;232
+Contact;Description;Racontez-moi votre problématique, et je vous dirai comment l'automatiser. Réponse sous 24h garantie.;index.html;234
+Contact;Email;contact@mrautomate.fr;index.html;245
+Contact;Localisation;France • Remote;index.html;256
+Contact;Disponibilité;Réponse sous 24h;index.html;267
+Contact;Garantie;POC Express gratuit si votre projet ne peut pas être automatisé;index.html;275
+Contact;Label nom;Nom complet;index.html;284
+Contact;Label email;Email;index.html;289
+Contact;Label téléphone;Téléphone;index.html;294
+Contact;Label message;Décrivez votre besoin;index.html;299
+Contact;Placeholder message;Quel processus souhaitez-vous automatiser ? Quels outils utilisez-vous actuellement ?;index.html;300
+Contact;Message succès;Votre message a bien été envoyé ! Je vous réponds sous 24h.;index.html;303
+Contact;Bouton envoyer;Envoyer ma demande;index.html;306
+Contact;Note formulaire;Vos données sont protégées et ne seront jamais partagées. Réponse sous 24h garantie.;index.html;313
+Footer;Tagline;Chaque entreprise a besoin de son Mr Automate.;index.html;330
+Footer;Copyright;© 2026 MrAutomate.fr - Tous droits réservés;index.html;352
+Navigation;Lien 1;Notre approche;index.html;49
+Navigation;Lien 2;FAQ;index.html;50
+Navigation;CTA;Démarrer;index.html;51
+Meta;Titre page;MrAutomate.fr - Votre expert en automatisation pour TPE/PME;index.html;6
+Meta;Description;En 2026, toute entreprise a besoin d'un Mr Automate. Automatisez vos processus métier avec notre POC à 150€.;index.html;7
