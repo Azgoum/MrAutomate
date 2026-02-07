@@ -1,22 +1,26 @@
 // Navigation scroll effect
 const navbar = document.getElementById('navbar');
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+if (navbar) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+}
 
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');
 
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    mobileMenuBtn.classList.toggle('active');
-});
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+    });
+}
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-links a').forEach(link => {
@@ -86,19 +90,25 @@ document.querySelectorAll('.showcase-card').forEach((card, index) => {
     observer.observe(card);
 });
 
-// Number counter animation
+// Number counter animation using requestAnimationFrame
 const animateNumber = (element, target, duration = 2000) => {
-    const increment = target / (duration / 16);
-    let current = 0;
+    let startTime = null;
+    element.textContent = '0';
 
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-            current = target;
-            clearInterval(timer);
+    const step = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        element.textContent = Math.floor(progress * target);
+
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        } else {
+            element.textContent = target;
         }
-        element.textContent = Math.floor(current);
-    }, 16);
+    };
+
+    requestAnimationFrame(step);
 };
 
 // Observe stats with data-target attribute
@@ -108,7 +118,7 @@ const statsObserver = new IntersectionObserver((entries) => {
             const value = entry.target.querySelector('.stat-value');
             if (value && !value.classList.contains('animated')) {
                 value.classList.add('animated');
-                const target = parseInt(value.getAttribute('data-target')) || parseInt(value.textContent);
+                const target = parseInt(value.getAttribute('data-target'));
                 if (!isNaN(target) && target > 0) {
                     animateNumber(value, target);
                 }
