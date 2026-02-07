@@ -5,24 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MrAutomate.fr - Votre expert en automatisation pour TPE/PME</title>
     <meta name="description" content="En 2026, toute entreprise a besoin d'un Mr Automate. Automatisez vos processus métier avec notre POC à 150€. Expert en n8n, Power BI et automatisation.">
+    <link rel="canonical" href="https://mrautomate.fr/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mrautomate.fr/">
+    <meta property="og:title" content="MrAutomate.fr - Votre expert en automatisation pour TPE/PME">
+    <meta property="og:description" content="En 2026, toute entreprise a besoin d'un Mr Automate. Automatisez vos processus métier avec notre POC à 150€. Expert en n8n, Power BI et automatisation.">
+    <meta property="og:image" content="/og-image.svg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="MrAutomate.fr">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MrAutomate.fr - Votre expert en automatisation pour TPE/PME">
+    <meta name="twitter:description" content="En 2026, toute entreprise a besoin d'un Mr Automate. Automatisez vos processus métier avec notre POC à 150€. Expert en n8n, Power BI et automatisation.">
+    <meta name="twitter:image" content="/og-image.svg">
+    <link rel="alternate" hreflang="fr" href="https://mrautomate.fr/">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <!-- Google Analytics - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MrAutomate.fr",
+        "url": "https://mrautomate.fr/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "MrAutomate.fr",
+        "description": "Expert en automatisation pour TPE/PME. Automatisez vos processus métier avec notre POC à 150€.",
+        "email": "contact@mrautomate.fr",
+        "areaServed": "France",
+        "priceRange": "€€",
+        "url": "https://mrautomate.fr/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'un POC et pourquoi 150€ seulement ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un POC (Proof of Concept) est un prototype fonctionnel qui démontre la faisabilité de votre projet. Pour 150€, vous obtenez une version simplifiée mais opérationnelle de votre automatisation, livrée en 1-2 jours. C'est un investissement minimal pour valider l'intérêt du projet avant de s'engager sur un développement complet. Ce tarif mini me permet de tester la compatibilité avec votre besoin, et à vous de voir concrètement le résultat avant d'investir davantage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels types de processus peuvent être automatisés ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quasiment tout ce qui n'implique que de l'informatique."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Après le POC, combien coûte le projet complet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les projets sont facturés à 500€ par jour. Après le POC, je vous donne une estimation précise en nombre de jours nécessaires pour industrialiser la solution. Un projet simple (1-2 workflows) prend généralement 2-4 jours. Un projet complexe avec plusieurs intégrations peut aller jusqu'à 8-12 jours. Tout est cadré et transparent dès le départ."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="logo">
+            <a href="/" class="logo">
                 <span class="logo-text">MrAutomate<span class="logo-tld">.fr</span></span>
-            </div>
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#methode">Notre approche</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact" class="cta-nav">Démarrer</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,6 +105,7 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section class="hero hero-simple">
         <div class="container hero-container-simple">
@@ -46,7 +122,7 @@
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary">
                         <span>Lancez votre POC à 150€</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                             <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
@@ -105,7 +181,7 @@
                     </ul>
                     <a href="#contact" class="card-cta">
                         Commander mon POC
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                             <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </a>
@@ -130,7 +206,7 @@
                     </ul>
                     <a href="#contact" class="card-cta card-cta-secondary">
                         Demander un audit
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                             <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </a>
@@ -150,13 +226,13 @@
 
             <div class="faq-container">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
                         <span>Qu'est-ce qu'un POC et pourquoi 150€ seulement ?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-1">
                         <p>
                             Un POC (Proof of Concept) est un prototype fonctionnel qui démontre la faisabilité
                             de votre projet. Pour 150€, vous obtenez une version simplifiée mais opérationnelle
@@ -171,13 +247,13 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
                         <span>Quels types de processus peuvent être automatisés ?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-2">
                         <p>
                             Quasiment tout ce qui n'implique que de l'informatique.
                         </p>
@@ -185,13 +261,13 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
                         <span>Après le POC, combien coûte le projet complet ?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-3">
                         <p>
                             Les projets sont facturés à <strong>500€ par jour</strong>. Après le POC,
                             je vous donne une estimation précise en nombre de jours nécessaires pour
@@ -230,7 +306,7 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                     <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </div>
@@ -242,7 +318,7 @@
 
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
                                 </svg>
                             </div>
@@ -254,7 +330,7 @@
 
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
                                     <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
@@ -267,7 +343,7 @@
                     </div>
 
                     <div class="contact-guarantee">
-                        <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none">
+                        <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                         <div>
@@ -304,13 +380,13 @@
                             <textarea id="message" name="message" rows="5" required placeholder="Quel processus souhaitez-vous automatiser ? Quels outils utilisez-vous actuellement ?"></textarea>
                         </div>
 
-                        <div id="form-success" class="form-success" style="display: none;">
+                        <div id="form-success" class="form-success" role="alert" style="display: none;">
                             Votre message a bien été envoyé ! Je vous réponds sous 24h.
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-full">
                             <span>Envoyer ma demande</span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                                 <path d="M18 2L9 11m9-9l-6 16-3-7-7-3 16-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
@@ -324,6 +400,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">

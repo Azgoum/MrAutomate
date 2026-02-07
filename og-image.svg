@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#fafafa"/>
+
+  <!-- Subtle top accent bar -->
+  <rect width="1200" height="4" fill="#059669"/>
+
+  <!-- Decorative geometric elements -->
+  <circle cx="120" cy="500" r="180" fill="url(#accent)" opacity="0.5"/>
+  <circle cx="1080" cy="130" r="220" fill="url(#accent)" opacity="0.4"/>
+
+  <!-- Decorative line -->
+  <line x1="480" y1="340" x2="720" y2="340" stroke="#059669" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Brand name -->
+  <text x="600" y="260" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="72" font-weight="800" letter-spacing="-1">
+    <tspan fill="#111827">MrAutomate</tspan><tspan fill="#059669">.fr</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="400" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="500" fill="#4b5563">
+    Votre expert en automatisation pour TPE/PME
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="455" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#6b7280">
+    POC Express en 2 jours · 150&#8364;
+  </text>
+
+  <!-- Bottom accent bar -->
+  <rect y="626" width="1200" height="4" fill="#059669"/>
+</svg>
