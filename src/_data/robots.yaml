@@ -1,7 +1,0 @@
-_name: Robots.txt
-_description: Search engine crawler rules
-_icon: smart_toy
-
-crawler_rules: |
-  User-agent: *
-  Allow: /

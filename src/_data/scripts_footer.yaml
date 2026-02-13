@@ -1,8 +1,0 @@
-_name: Footer Scripts
-_description: Loaded before </body> closes
-_icon: code
-
-# Footer Scripts - loaded before closing </body> tag
-code: |
-  <!-- 🍇 The freshest scripts saved for last! -->
-

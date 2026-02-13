@@ -1,7 +1,0 @@
-{
-  "layout": "layouts/legal.njk",
-  "tags": ["legal"],
-  "eleventyComputed": {
-    "permalink": "{% if permalink %}/{{ permalink | slugify }}/{% else %}/{{ page.fileSlug }}/{% endif %}"
-  }
-}

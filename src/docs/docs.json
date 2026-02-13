@@ -1,7 +1,0 @@
-{
-  "layout": "layouts/docs.njk",
-  "tags": ["docs"],
-  "eleventyComputed": {
-    "permalink": "{% if slug %}/docs/{{ slug | slugify }}/{% else %}/docs/{{ page.fileSlug }}/{% endif %}"
-  }
-}

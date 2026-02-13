@@ -1,8 +1,0 @@
-_name: Head Scripts
-_description: Loaded in <head> before page renders
-_icon: code
-
-# Head Scripts - loaded in <head> before page renders
-code: |
-  <!-- 🍊 Fresh squeeze here! Add your head scripts below -->
-

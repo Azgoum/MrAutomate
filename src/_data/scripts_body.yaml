@@ -1,8 +1,0 @@
-_name: Body Scripts
-_description: Loaded after <body> opens
-_icon: code
-
-# Body Scripts - loaded after opening <body> tag
-code: |
-  <!-- 🍋 Zesty scripts go here! Right after the body opens -->
-

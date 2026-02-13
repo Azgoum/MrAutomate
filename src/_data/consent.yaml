@@ -1,9 +1,0 @@
-_name: Consent
-_description: Cookie consent banner settings
-_icon: cookie
-
-# Cookie Consent
-onetrust_id: ""
-onetrust_auto_block: true
-cookiebot_id: ""
-cookiebot_mode: "auto"
